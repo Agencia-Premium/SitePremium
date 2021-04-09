@@ -7,7 +7,7 @@ const NavBar: React.FC = ({}) => {
         <>
 
             <NavBarStyle>
-                <Left><img src="logo.svg"/></Left>
+                <Left><img src="logo.svg" alt="Logo na cor amarela, escrito prêmium agência digital."/></Left>
                 <Right>
                     <ul>
                         <li>Início</li>
