@@ -1,24 +1,29 @@
 import Head from 'next/head'
+import NavBar from '../components/NavBar'
+import Header from '../components/Header'
+import GlobalStyle from '../styles/global'
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <GlobalStyle/>
+        <Head>
+          <title>Create Next App</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <header>
+        <header>
+          <NavBar></NavBar>
+        </header>
 
-      </header>
+        <main>
+          <Header></Header>
+        </main>
 
-      <main>
-        bau, sogrinha.
-      </main>
-
-      <footer>
-        
-      </footer>
+        <footer>
+          
+        </footer>
+      
     </div>
   )
 }
