@@ -11,12 +11,20 @@ export const BgLinha = styled.div`
     width: 100%;
     height: 684px;
     background-image: url("bg-header.svg");
+    background-position: center center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     
 `
 export const Left = styled.div`
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
    h1{
        font-size: 86px;
        font-weight: 700;
@@ -34,5 +42,8 @@ export const Left = styled.div`
    }
 `
 export const Right = styled.div`
-    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
