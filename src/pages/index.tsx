@@ -13,7 +13,7 @@ export default function Home() {
       </header>
 
       <main>
-        Hello
+        bau, sogrinha.
       </main>
 
       <footer>
@@ -22,3 +22,4 @@ export default function Home() {
     </div>
   )
 }
+
