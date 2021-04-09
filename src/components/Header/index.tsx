@@ -16,7 +16,7 @@ const Header: React.FC = ({}) => {
                     </Left>
 
                     <Right>
-                        <img src="trofeu.svg"></img>
+                        <img src="troféu2.webp" alt="troféu na cor dourada no canto direito da página."></img>
                     </Right>
 
                 </BgLinha>
