@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 export const HeaderStyle = styled.div`
     width: 100%;
-    height: 684px;
+    height: 100%;
     background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
 
 `
 export const BgLinha = styled.div`
     width: 100%;
-    height: 684px;
+    height: 100%;
     background-image: url("bg-header.svg");
     background-position: center center;
     background-size: cover;
@@ -46,4 +46,8 @@ export const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    img {
+        margin-top: 80px;
+    }
 `
