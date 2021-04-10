@@ -2,6 +2,7 @@ import Head from 'next/head'
 import NavBar from '../components/NavBar'
 import Header from '../components/Header'
 import GlobalStyle from '../styles/global'
+import Title from '../components/Title'
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
         <main>
           <Header></Header>
         </main>
-
+        <section> 
+            <Title></Title>
+        </section>
         <footer>
           
         </footer>
