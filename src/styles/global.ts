@@ -1,8 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
- const GlobalStyle = createGlobalStyle`
+
+const GlobalStyle = createGlobalStyle`
     :root{
         font-size: 62.5%;
+        background-color: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
     }
 
     main {

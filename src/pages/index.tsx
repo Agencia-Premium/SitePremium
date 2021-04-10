@@ -5,7 +5,7 @@ import GlobalStyle from '../styles/global'
 
 export default function Home() {
   return (
-    <div>
+    <div className="container">
       <GlobalStyle/>
         <Head>
           <title>Create Next App</title>
