@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const NavBarStyle = styled.div`
     width: 100%;
     height: 90px;
-    background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
     display: flex;
 `
 export const Left = styled.div`
