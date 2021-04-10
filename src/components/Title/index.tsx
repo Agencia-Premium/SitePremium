@@ -1,11 +1,15 @@
 import React from 'react';
 
-import {NameTitulo} from './styles';
-
+import {NameTitulo, LineBotton} from './styles';
+    
 const Title: React.FC = ({}) => {
     return(
         <>
-            <NameTitulo>Nossos Serviços</NameTitulo>
+            
+            <LineBotton>
+                <NameTitulo>Nossos Serviços</NameTitulo>
+                <img src="line_botton.svg"/>
+            </LineBotton>
         </>
 
 
