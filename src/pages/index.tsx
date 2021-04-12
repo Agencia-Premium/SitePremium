@@ -7,6 +7,8 @@ import Title from '../components/Title'
 import Cardes from '../components/Cardes'
 import TitleMid from '../components/TitleMid'
 import CardesClient from '../components/CardesClient'
+import CardsComent from '../components/CardsComent'
+import ContainerComentario from '../components/CardsComent'
 
 export default function Home() {
   return (
@@ -35,6 +37,7 @@ export default function Home() {
 
         <section>
           <CardesClient></CardesClient>
+          <ContainerComentario></ContainerComentario>
         </section>
 
         <footer>
