@@ -16,4 +16,13 @@ export const LineBotton = styled.div`
     justify-content: center;
     
 `
-
+export const SubTitulo = styled.p`
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        font-family: "Inter";
+        color: rgba(223, 223, 223, 1);
+        margin: 35px 0 0;
+        width: 1032px;
+        height: 49px;
+`
