@@ -12,6 +12,14 @@ const GlobalStyle = createGlobalStyle`
         background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
     }
 
+    
+    .collaborators {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
     main {
         background-color: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
     }

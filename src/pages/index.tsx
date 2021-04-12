@@ -6,7 +6,10 @@ import GlobalStyle from '../styles/global'//estilo global.
 import Title from '../components/Title'
 import Cardes from '../components/Cardes'
 import TitleMid from '../components/TitleMid'
-import CardesClient from '../components/CardesClient'
+
+import Collaborator from "../components/Collaborator";
+
+import { Collaborators } from "../components/Collaborator/constants";
 
 export default function Home() {
   return (
@@ -25,7 +28,7 @@ export default function Home() {
           <Header></Header>
         </main>
         <section> 
-          <Title></Title>
+          <Title name="Nossos Serviços" />
           <Cardes></Cardes>
         </section>
           
@@ -33,9 +36,25 @@ export default function Home() {
           <TitleMid></TitleMid>
         </section>
 
-        <section>
-          <CardesClient></CardesClient>
-        </section>
+        <section className="collaborators">
+        {/* Collaborators */}
+        <Title name="Nossos Colaboradores" />
+        {Collaborators.map((colaborator, index) => {
+          return (
+            <Collaborator
+              key={index}
+              image={colaborator.image}
+              name={colaborator.name}
+              occupation={colaborator.occupation}
+              description={colaborator.description}
+              facebook={colaborator.socialMedia.facebook}
+              instagram={colaborator.socialMedia.instagram}
+              linkedin={colaborator.socialMedia.linkedin}
+              twitter={colaborator.socialMedia.twitter}
+            />
+          );
+        })}
+      </section>
 
         <footer>
           
