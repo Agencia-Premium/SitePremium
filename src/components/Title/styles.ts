@@ -25,4 +25,5 @@ export const SubTitulo = styled.p`
         margin: 35px 0 0;
         width: 1032px;
         height: 49px;
+        line-height: 24px;
 `

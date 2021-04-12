@@ -1,23 +1,22 @@
-import React from 'react';
+import React from "react";
 
 type TitleProps = {
-    name: string
-}
+  name: string;
+  description?: string;
+};
 
-import {NameTitulo, LineBotton, SubTitulo} from './styles';
+import { NameTitulo, LineBotton, SubTitulo } from "./styles";
 
-const Title: React.FC<TitleProps> = ({ name }) => {
-    return(
-        <>
-            <LineBotton>
-                <NameTitulo>{name}</NameTitulo>
-                <img src="line_botton.svg"/>
-                <SubTitulo>Desempenhamos diversas atividades e funções que tem como objetivo trazer seu negócio para o online, ou fazer com que ele ganha mais força e atraia potênciais clientes.</SubTitulo>
-            </LineBotton>
-            
-        </>
-    )
-
-}
+const Title: React.FC<TitleProps> = ({ name, description }) => {
+  return (
+    <>
+      <LineBotton>
+        <NameTitulo>{name}</NameTitulo>
+        <img src="line_botton.svg" />
+        {description && <SubTitulo>{description}</SubTitulo>}
+      </LineBotton>
+    </>
+  );
+};
 
 export default Title;
