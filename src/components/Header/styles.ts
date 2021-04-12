@@ -4,8 +4,6 @@ import styled from 'styled-components';
 export const HeaderStyle = styled.div`
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%); */
-
 `
 export const BgLinha = styled.div`
     width: 100%;
@@ -15,8 +13,7 @@ export const BgLinha = styled.div`
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 `
 export const Left = styled.div`
     width: 50%;
@@ -26,7 +23,7 @@ export const Left = styled.div`
     justify-content: center;
 
    h1{
-       font-size: 86px;
+       font-size: 8.6rem;
        font-weight: 700;
        color: rgba(241,241,241,1);
        font-Family:"Inter";
@@ -34,7 +31,7 @@ export const Left = styled.div`
        padding: 0 0 14px 0;
    }
    p {
-       font-size: 26px;
+       font-size: 2.6rem;
        font-weight: 400;
        color: rgba(241,241,241,1);
        font-family:"Inter";
