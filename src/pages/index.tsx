@@ -1,65 +1,20 @@
 // importar os componentes
-<<<<<<< HEAD
-import Head from 'next/head'
-import NavBar from '../components/NavBar'
-import Header from '../components/Header'
-import GlobalStyle from '../styles/global'//estilo global.
-import Title from '../components/Title'
-import Cardes from '../components/Cardes'
-import TitleMid from '../components/TitleMid'
-import CardesClient from '../components/CardesClient'
-import CardsComent from '../components/CardsComent'
-import ContainerComentario from '../components/CardsComent'
-=======
 import Head from "next/head";
 import NavBar from "../components/NavBar";
 import Header from "../components/Header";
 import GlobalStyle from "../styles/global"; //estilo global.
 import Title from "../components/Title";
 import Cardes from "../components/Cardes";
-import TitleMid from "../components/TitleMid";
+import Clients from "../components/Clients";
 
 import Collaborator from "../components/Collaborator";
 
 import { Collaborators } from "../components/Collaborator/constants";
->>>>>>> f5e457f3dd8139d5b3f97afb8415768e51d79a97
+
 
 export default function Home() {
   return (
     <div className="container">
-<<<<<<< HEAD
-      <GlobalStyle/>
-        <Head>
-          <title>Create Next App</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-
-        <header>
-          <NavBar></NavBar>
-        </header>
-
-        <main>
-          <Header></Header>
-        </main>
-        <section> 
-          <Title></Title>
-          <Cardes></Cardes>
-        </section>
-          
-        <section>
-          <TitleMid></TitleMid>
-        </section>
-
-        <section>
-          <CardesClient></CardesClient>
-          <ContainerComentario></ContainerComentario>
-        </section>
-
-        <footer>
-          
-        </footer>
-      
-=======
       <GlobalStyle />
       <Head>
         <title>Create Next App</title>
@@ -82,7 +37,12 @@ export default function Home() {
       </section>
 
       <section>
-        <TitleMid></TitleMid>
+        <Title
+          name="Nossos Clientes"
+          description="Estes são alguns de nossos clientes."
+        />
+
+        <Clients/>
       </section>
 
       <section className="collaborators">
@@ -106,7 +66,7 @@ export default function Home() {
       </section>
 
       <footer></footer>
->>>>>>> f5e457f3dd8139d5b3f97afb8415768e51d79a97
+
     </div>
   );
 }
