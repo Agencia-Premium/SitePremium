@@ -12,9 +12,13 @@ const GlobalStyle = createGlobalStyle`
         background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
     }
 
-    main {
-        background-color: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
+    
+    .collaborators {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
 
         html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
