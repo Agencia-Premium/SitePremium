@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
 
 export const NavBarStyle = styled.div`
     width: 100%;
@@ -30,7 +31,12 @@ export const Right = styled.div`
             color: rgba(241,241,241,1);
             font-family:"Inter";
             cursor: pointer;     
-            padding: 0 24px 0 0;       
+            padding: 0 24px 0 0;
+            transition: all 0.2s ease-in-out;
+
+            :hover {
+                color: ${darken(0.08, 'rgba(241,241,241,1)')};
+            }       
         }
     }
 `
