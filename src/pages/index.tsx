@@ -6,7 +6,7 @@ import GlobalStyle from "../styles/global"; //estilo global.
 import Title from "../components/Title";
 import Cardes from "../components/Cardes";
 import Clients from "../components/Clients";
-
+import CardsComponent from "../components/CardsComent";
 import Collaborator from "../components/Collaborator";
 
 import { Collaborators } from "../components/Collaborator/constants";
@@ -41,8 +41,10 @@ export default function Home() {
           name="Nossos Clientes"
           description="Estes são alguns de nossos clientes."
         />
-
         <Clients/>
+      </section>
+      <section>
+        <CardsComponent/>
       </section>
 
       <section className="collaborators">
