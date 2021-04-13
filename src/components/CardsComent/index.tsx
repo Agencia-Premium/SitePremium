@@ -16,7 +16,18 @@ const ContainerComentario: React.FC = ({}) => {
                     </Right>
                    
                 </Grade>
+
+                <Grade className="comente2"> 
+                    <Right >
+                        <h2 className="depo">Fórmula X</h2>
+                        <p className="depo"> Oferecer seu produto ou serviço para a pessoa certa faz total diferença, nosso time é expecialista nisso!</p>
+                    </Right>
+                    <Left>
+                        <img src="formulax.webp"/>
+                    </Left>
+                </Grade>
             </ContainerComent>
+
         </>
 
 
