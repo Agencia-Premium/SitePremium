@@ -9,7 +9,7 @@ import {
 const Clients: React.FC = () => {
     return (
         <Section>
-            <div className="container">
+            <div className="container-clients">
                 <div className="logo-list">
                     {
                         Logos.map( logo => {
