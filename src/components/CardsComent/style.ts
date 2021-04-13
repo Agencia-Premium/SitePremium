@@ -20,6 +20,20 @@ export const Grade = styled.div`
     align-items: center;
     justify-content: center;
     margin: 45px auto;
+    position: relative;
+
+    .AspasDireita {
+        position: absolute;
+        left: 650px;
+        top: 127px;
+    }
+
+    .AspasEsquerda {
+        position: absolute;
+        left: -27px;
+        top: -27px;
+    }
+
 `
 export const Left = styled.div`
     display: flex;
