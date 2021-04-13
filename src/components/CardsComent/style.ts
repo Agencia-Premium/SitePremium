@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
 export const ContainerComent = styled.div`
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+   
+    /* align-content: space-between;
+    align-content: space-around; */
     
 `
 
@@ -14,8 +19,7 @@ export const Grade = styled.div`
     border-radius: 6px;
     align-items: center;
     justify-content: center;
-    margin: 90px 150px;
-
+    margin: 45px auto;
 `
 export const Left = styled.div`
     display: flex;
