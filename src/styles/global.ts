@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-
 const GlobalStyle = createGlobalStyle`
     :root{
         font-size: 62.5%;
@@ -15,8 +14,15 @@ const GlobalStyle = createGlobalStyle`
     
     .collaborators {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        max-width: 1032px;
+        margin: 0px auto;
+    }
+
+     .comment-user {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
 

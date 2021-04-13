@@ -8,9 +8,9 @@ import Cardes from "../components/Cardes";
 import Clients from "../components/Clients";
 import CardsComponent from "../components/CardsComent";
 import Collaborator from "../components/Collaborator";
+import Footer from '../components/Footer'
 
 import { Collaborators } from "../components/Collaborator/constants";
-
 
 export default function Home() {
   return (
@@ -41,15 +41,15 @@ export default function Home() {
           name="Nossos Clientes"
           description="Estes são alguns de nossos clientes."
         />
-        <Clients/>
+        <Clients />
       </section>
-      <section>
-        <CardsComponent/>
+      <section className="comment-user">
+        <CardsComponent />
       </section>
 
+      <Title name="Nossos Colaboradores" />
       <section className="collaborators">
         {/* Collaborators */}
-        <Title name="Nossos Colaboradores" />
         {Collaborators.map((colaborator, index) => {
           return (
             <Collaborator
@@ -67,8 +67,9 @@ export default function Home() {
         })}
       </section>
 
-      <footer></footer>
-
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

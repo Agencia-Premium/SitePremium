@@ -1,44 +1,23 @@
-import React from 'react';
+import React from "react";
 
-import {ContainerCards, Cards} from './styles';
+import { ContainerCards, Cards } from "./styles";
+
+import { Cards as CardConstants } from "./constants";
 
 const Cardes: React.FC = ({}) => {
-    return(
-
-        <>
-            <ContainerCards>
-                <Cards>
-                    <h2>Desenvolvimento</h2>
-                    <p>Presença on-line é importantisimo. Mostre para o mundo o que sua empresa faz!</p>
-                </Cards>
-                <Cards>
-                    <h2>Gestão de Trafego</h2>
-                    <p>Oferecer seu produto ou serviço para a pessoa certa
-                    faz total diferença, nosso time é expecialista nisso!</p>
-                </Cards>
-                <Cards>
-                    <h2>Desenvolvimento</h2>
-                    <p>Oferecer seu produto ou serviço para a pessoa certa
-                    faz total diferença, nosso time é expecialista nisso!</p>
-                </Cards>
-                <Cards>
-                    <h2>Desenvolvimento</h2>
-                    <p>Presença on-line é importantisimo. Mostre para o mundo o que sua empresa faz!</p>
-                </Cards>
-                <Cards>
-                    <h2>Desenvolvimento</h2>
-                    <p>Oferecer seu produto ou serviço para a pessoa certafaz total diferença, nosso time é expecialista nisso!</p>
-                    
-                </Cards>
-                <Cards>
-                    <h2>Desenvolvimento</h2>
-                    <p>Oferecer seu produto ou serviço para a pessoa certa
-                    faz total diferença, nosso time é expecialista nisso!</p>
-                </Cards>
-            </ContainerCards>
-        </>
-    )
-
-
-}
+  return (
+    <>
+      <ContainerCards>
+        {CardConstants.map((card, index) => {
+          return (
+            <Cards key={index}>
+              <h2>{card.title}</h2>
+              <p>{card.description}</p>
+            </Cards>
+          );
+        })}
+      </ContainerCards>
+    </>
+  );
+};
 export default Cardes;

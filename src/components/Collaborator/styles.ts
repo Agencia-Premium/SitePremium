@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 56px 0;
+  margin: 56px 20px 20px 0;
 
   .container-image {
     width: 100px;

@@ -1,14 +1,24 @@
 import styled from 'styled-components';
 
 export const ContainerComent = styled.div`
-    display: flex;
-    justify-content: center;
-    
-    flex-wrap: wrap;
-   
-    /* align-content: space-between;
-    align-content: space-around; */
-    
+    width: 100%;
+    max-width: 1032px;
+    margin: 62px auto;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+
+    div.grade-left {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    div.grade-right {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 60px;
+    }
 `
 
 export const Grade = styled.div`
@@ -19,7 +29,7 @@ export const Grade = styled.div`
     border-radius: 6px;
     align-items: center;
     justify-content: center;
-    margin: 45px auto;
+    /* margin: 45px auto; */
     position: relative;
 
     .AspasDireita {

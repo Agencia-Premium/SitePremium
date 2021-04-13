@@ -12,9 +12,8 @@ const Clients: React.FC = () => {
             <div className="container-clients">
                 <div className="logo-list">
                     {
-                        Logos.map( logo => {
-                            console.log(logo); 
-                            return<img src={logo} alt="logo do cliente"/>
+                        Logos.map((logo, index) => {
+                            return<img key={index} src={logo} alt="logo do cliente"/>
                         } )
                     }
                 </div>

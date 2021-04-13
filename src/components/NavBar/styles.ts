@@ -35,7 +35,7 @@ export const Right = styled.div`
             transition: all 0.2s ease-in-out;
 
             :hover {
-                color: ${darken(0.08, 'rgba(241,241,241,1)')};
+                color: ${darken(0.12, 'rgba(241,241,241,1)')};
             }       
         }
     }
