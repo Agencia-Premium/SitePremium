@@ -51,8 +51,10 @@ export const Wrapper = styled.button<WrapperProps>`
     ${!!background && WrapperModifiers[background]}
 
     img {
-      width: 20px;
-      height: 20px;
+      width: 14px;
+      height: 14px;
+      padding-left: 6px;
+      padding-top: 3px;
     }
   `}
 `;
