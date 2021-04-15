@@ -1,17 +1,31 @@
-import React from 'react'
-import * as S from './styles'
+import React from "react";
+import * as S from "./styles";
 
 export type ButtonProps = {
-    scale: 'small' | 'medium'
-    background: 'gray' | 'yellow'
-}
+  scale?: "small" | "medium";
+  background?: "gray" | "yellow";
+  icon?: string;
+};
 
-const Button: React.FC<ButtonProps> = ({ scale, background, children }) => {
-    return (
-        <>
-            <S.Wrapper scale={scale} background={background}>{children}</S.Wrapper>
-        </>
-    )
-}
+const Button: React.FC<ButtonProps> = ({
+  scale = "medium",
+  background = "gray",
+  children,
+  icon,
+  ...props
+}) => {
+  return (
+    <>
+      <S.Wrapper
+        scale={scale}
+        background={background}
+        {...props}
+      >
+        {children}
+        {!!icon && <img src={icon} style={{ width: '20px', height: '20px', marginLeft: '4px' }} />}
+      </S.Wrapper>
+    </>
+  );
+};
 
-export default Button
+export default Button;

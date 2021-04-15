@@ -1,7 +1,8 @@
 import React from "react";
-
+import { Send } from "@styled-icons/fluentui-system-regular/Send";
 import * as S from "./styles";
-import Input from '../../Input'
+import Input from "../../Input";
+import Button from "../../Button";
 const Footer: React.FC = () => {
   return (
     <>
@@ -180,6 +181,9 @@ const Footer: React.FC = () => {
             </div>
             <div>
               <Input background="gray" scale="small" />
+              <Button scale="small" background="gray">
+                Enviar
+              </Button>
             </div>
           </div>
         </div>
