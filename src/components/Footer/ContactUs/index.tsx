@@ -1,7 +1,7 @@
 import React from "react";
 
 import * as S from "./styles";
-
+import Input from '../../Input'
 const Footer: React.FC = () => {
   return (
     <>
@@ -166,8 +166,21 @@ const Footer: React.FC = () => {
           </svg>
         </div>
         <div className="container-footer">
-          <div className="logo">
+          <div className="content">
             <img src="logo.svg" />
+            <div className="content-menu">
+              <h6>Menu</h6>
+              <p>Início</p>
+              <p>Clients</p>
+              <p>Colaboradores</p>
+            </div>
+            <div className="second-menu">
+              <p>Contato</p>
+              <p>Quem somos</p>
+            </div>
+            <div>
+              <Input />
+            </div>
           </div>
         </div>
       </S.Wrapper>
