@@ -168,24 +168,35 @@ const Footer: React.FC = () => {
         </div>
         <div className="container-footer">
           <div className="content">
-            <img src="logo.svg" />
-            <div className="content-menu">
-              <h6>Menu</h6>
-              <p>Início</p>
-              <p>Clients</p>
-              <p>Colaboradores</p>
-            </div>
-            <div className="second-menu">
-              <p>Contato</p>
-              <p>Quem somos</p>
-            </div>
-            <div className="three-menu">
-              <Input background="gray" scale="small" marginBottom={false} />
-              <Button scale="small" background="gray">
-                Enviar
-              </Button>
+            <div className="box-menu">
+              <img src="logo.svg" />
+              <div className="content-menu">
+                <h6>Menu</h6>
+                <p>Início</p>
+                <p>Clients</p>
+                <p>Colaboradores</p>
+              </div>
+              <div className="second-menu">
+                <p>Contato</p>
+                <p>Quem somos</p>
+              </div>
+              <div className="three-menu">
+                <h6>Fique por dentro das novidades!</h6>
+                <Input
+                  background="gray"
+                  scale="small"
+                  marginBottom={false}
+                  placeholder="Insira seu e-mail"
+                />
+                <Button scale="small" background="gray">
+                  Enviar
+                </Button>
+              </div>
             </div>
           </div>
+          {/* <div>
+            <hr style={{ width: "200px", height: "4px", background: "red" }} />
+          </div> */}
         </div>
       </S.Wrapper>
     </>

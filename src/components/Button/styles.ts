@@ -11,6 +11,7 @@ const WrapperModifiers = {
     font-size: 16px;
     font-weight: bold;
     font-family: "Inter";
+    margin-top: 10px;
   `,
   medium: () => css`
     width: 416px;

@@ -15,23 +15,21 @@ export const Wrapper = styled.div`
 
   div.container-footer {
     height: 710px;
-    display: flex;
-    background-image: url("footer.svg");
+    background-image: url("footerr.png");
     background-size: 100% auto;
     background-position: center bottom;
     background-repeat: no-repeat;
-    width: 100%;
+    min-width: 100%;
     display: flex;
+    /* flex-direction: column; */
     align-items: center;
   }
 
   div.content {
-    /* background-color: red; */
+    display: flex;
     width: 100%;
     height: 100%;
-    display: flex;
     align-items: center;
-    padding-top: 200px;
     padding-left: 250px;
   }
 
@@ -82,5 +80,19 @@ export const Wrapper = styled.div`
 
   div.three-menu {
     margin-left: 162px;
+
+    h6 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      font-family: "Inter";
+      padding-bottom: 12px;
+    }
+  }
+  div.box-menu {
+    display: flex;
+    padding-top: 200px;
   }
 `;
+
+

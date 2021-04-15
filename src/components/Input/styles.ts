@@ -4,11 +4,11 @@ import { InputProps } from "./index";
 const WrapperModifiers = {
   gray: () => css`
     background: #333;
-    color: #fff;
+    color: #ccc;
     border: none;
 
     ::placeholder {
-      color: #fff;
+      color: #ccc;
     }
   `,
   transparent: () => css`
