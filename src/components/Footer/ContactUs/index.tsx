@@ -179,7 +179,7 @@ const Footer: React.FC = () => {
               <p>Quem somos</p>
             </div>
             <div>
-              <Input />
+              <Input background="gray" scale="small" />
             </div>
           </div>
         </div>

@@ -26,12 +26,12 @@ export const Wrapper = styled.div`
   }
 
   div.content {
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    margin-top: 200px;
+    padding-top: 200px;
     padding-left: 250px;
   }
 

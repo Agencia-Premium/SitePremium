@@ -3,7 +3,7 @@ import { InputProps } from "./index";
 
 const WrapperModifiers = {
   gray: () => css`
-    background-color: #333;
+    background: #333;
     color: #fff;
     border: none;
 
@@ -14,25 +14,30 @@ const WrapperModifiers = {
   transparent: () => css`
     background-color: transparent;
     color: #848484;
-    border: 2px solid #EEEE;
+    border: 2px solid #eeee;
 
     ::placeholder {
       color: #848484;
     }
   `,
 
-  medium: () => css`
+  small: () => css`
     width: 286px;
     height: 42px;
   `,
-  large: () => css`
+
+  medium: () => css`
     width: 416px;
     height: 56px;
+  `,
+  large: () => css`
+    width: 416px;
+    height: 128px;
   `,
 };
 
 export const Wrapper = styled.input<InputProps>`
-  ${({ scale, background }) => css`
+  ${({ scale, background, marginBottom }) => css`
     padding-left: 12px;
     display: flex;
     justify-content: center;
@@ -40,5 +45,6 @@ export const Wrapper = styled.input<InputProps>`
     outline: none;
     ${!!background && WrapperModifiers[background]}
     ${!!scale && WrapperModifiers[scale]}
+    margin-bottom: ${marginBottom ? "28px" : "0px"}
   `}
 `;

@@ -3,16 +3,23 @@ import * as S from "./styles";
 
 export type InputProps = {
   background?: "gray" | "transparent";
-  scale?: "medium" | "large";
+  scale?: "small" | "medium" | "large";
+  marginBottom?: boolean;
+
 };
 
 const Input: React.FC<InputProps> = ({
-  background = 'gray',
-  scale = 'medium',
+  background = "gray",
+  scale = "medium",
+  marginBottom = false,
 }) => {
   return (
     <>
-      <S.Wrapper background={background} scale={scale}></S.Wrapper>
+      <S.Wrapper
+        background={background}
+        scale={scale}
+        marginBottom={marginBottom}
+      ></S.Wrapper>
     </>
   );
 };
