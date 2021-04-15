@@ -5,17 +5,20 @@ export type InputProps = {
   background?: "gray" | "transparent";
   scale?: "small" | "medium" | "large";
   marginBottom?: boolean;
+  placeholder?: string;
 
 };
 
 const Input: React.FC<InputProps> = ({
   background = "gray",
   scale = "medium",
-  marginBottom = false,
+  marginBottom = true,
+  placeholder
 }) => {
   return (
     <>
       <S.Wrapper
+        placeholder={placeholder}
         background={background}
         scale={scale}
         marginBottom={marginBottom}

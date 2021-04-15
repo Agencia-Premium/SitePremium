@@ -14,8 +14,8 @@ const WrapperModifiers = {
   transparent: () => css`
     background-color: transparent;
     color: #848484;
-    border: 2px solid #eeee;
-
+    border: 1px solid #eeee;
+    
     ::placeholder {
       color: #848484;
     }
@@ -45,6 +45,7 @@ export const Wrapper = styled.input<InputProps>`
     outline: none;
     ${!!background && WrapperModifiers[background]}
     ${!!scale && WrapperModifiers[scale]}
+    /* border-top-width: ${marginBottom ? '1px': '0'}: */
     margin-bottom: ${marginBottom ? "28px" : "0px"}
   `}
 `;
