@@ -79,4 +79,8 @@ export const Wrapper = styled.div`
     top: -20px;
     left: 25%;
   }
+
+  div.three-menu {
+    margin-left: 162px;
+  }
 `;

@@ -179,8 +179,8 @@ const Footer: React.FC = () => {
               <p>Contato</p>
               <p>Quem somos</p>
             </div>
-            <div>
-              <Input background="gray" scale="small" />
+            <div className="three-menu">
+              <Input background="gray" scale="small" marginBottom={false} />
               <Button scale="small" background="gray">
                 Enviar
               </Button>
