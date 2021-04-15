@@ -10,6 +10,8 @@ export const ContainerContact = styled.div`
     font-family: "Inter";
     color: rgba(223,223,223,1);
     position: relative;
+    padding-top: 90px;
+    padding-bottom: 40px;
     .container {
         
     }
