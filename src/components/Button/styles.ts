@@ -54,7 +54,7 @@ export const Wrapper = styled.button<WrapperProps>`
       width: 14px;
       height: 14px;
       padding-left: 6px;
-      padding-top: 3px;
+      padding-top: 2px;
     }
   `}
 `;
