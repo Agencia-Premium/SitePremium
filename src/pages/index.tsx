@@ -1,4 +1,6 @@
 // importar os componentes
+import { ArrowBackIos as ArrowLeft } from "@styled-icons/material-outlined/ArrowBackIos";
+import { ArrowForwardIos as ArrowRight } from "@styled-icons/material-outlined/ArrowForwardIos";
 import Head from "next/head";
 import NavBar from "../components/NavBar";
 import Header from "../components/Header";
@@ -7,10 +9,8 @@ import Title from "../components/Title";
 import Cardes from "../components/Cardes";
 import Clients from "../components/Clients";
 import CardsComponent from "../components/CardsComent";
-import Collaborator from "../components/Collaborator";
-import Footer from '../components/Footer'
-
-import { Collaborators } from "../components/Collaborator/constants";
+import Footer from "../components/Footer";
+import ColaborattorSlider from "../components/CollaboratorSlider";
 
 export default function Home() {
   return (
@@ -52,21 +52,7 @@ export default function Home() {
       <Title name="Nossos Colaboradores" />
       <section className="collaborators">
         {/* Collaborators */}
-        {Collaborators.map((colaborator, index) => {
-          return (
-            <Collaborator
-              key={index}
-              image={colaborator.image}
-              name={colaborator.name}
-              occupation={colaborator.occupation}
-              description={colaborator.description}
-              facebook={colaborator.socialMedia.facebook}
-              instagram={colaborator.socialMedia.instagram}
-              linkedin={colaborator.socialMedia.linkedin}
-              twitter={colaborator.socialMedia.twitter}
-            />
-          );
-        })}
+        <ColaborattorSlider />
       </section>
 
       <footer>
