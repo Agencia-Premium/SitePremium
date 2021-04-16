@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from "../components/NavBar";
 import GlobalStyle from "../styles/global";
-// import Header from "../components/Header";
+import Footer from "../components/Footer";
 import HeaderSobre from "../components/HeaderSobre";
 export default function sobre() {
     return(
@@ -22,7 +22,7 @@ export default function sobre() {
             </main>
 
             <footer>
-
+                <Footer/>
             </footer>
         </div>
         
