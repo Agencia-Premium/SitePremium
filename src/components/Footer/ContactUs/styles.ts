@@ -1,40 +1,28 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 100%;
-  height: 400px;
-  margin: 60px 0 0 0;
   position: relative;
-  display: flex;
+  margin-top: 60px;
 
-  div.contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  div.contact svg {
+    z-index: 99;
   }
 
   div.container-footer {
-    height: 710px;
     background-image: url("footerr.png");
     background-size: 100% auto;
     background-position: center bottom;
     background-repeat: no-repeat;
-    min-width: 100%;
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
+    position: relative;
   }
 
   div.content {
     display: flex;
-    width: 100%;
-    height: 100%;
+    flex-direction: column;
     align-items: center;
-    padding-left: 250px;
   }
 
   div.content img {
-    width: 182px;
     height: 104px;
   }
 
@@ -91,8 +79,61 @@ export const Wrapper = styled.div`
   }
   div.box-menu {
     display: flex;
-    padding-top: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 400px;
+    /* position: relative; */
+  }
+
+  div.diviser {
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  div.diviser hr {
+    max-width: 70%;
+    background-color: white;
+  }
+
+  div.copyright {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    /* position: relative; */
+
+    p {
+      font-size: 16px;
+      color: #fff;
+      font-weight: 500;
+      font-family: "Inter";
+      padding-top: 22px;
+    }
+
+    .social-media {
+      display: flex;
+      padding-top: 22px;
+
+      a img {
+        width: 24px;
+        height: 24px;
+        margin-left: 3px;
+      }
+    }
+  }
+
+  div.circle-one {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: red;
+    position: absolute;
+    top: 120px;
+    left: -50px;
+    background: rgba(102, 102, 102, 0.2);
+    backdrop-filter: blur(10px);
   }
 `;
-
-

@@ -169,6 +169,7 @@ const Footer: React.FC = () => {
         <div className="container-footer">
           <div className="content">
             <div className="box-menu">
+              <div className="circle-one" />
               <img src="logo.svg" />
               <div className="content-menu">
                 <h6>Menu</h6>
@@ -193,10 +194,24 @@ const Footer: React.FC = () => {
                 </Button>
               </div>
             </div>
+            <div className="diviser">
+              <hr />
+            </div>
+            <div className="copyright">
+              <p>® 2020 Agência Premium | All Rights Reserved | Privacity</p>
+              <div className="social-media">
+                <a>
+                  <img src="linkedin-footer.svg" />
+                </a>
+                <a>
+                  <img src="facebook-footer.svg" />
+                </a>
+                <a>
+                  <img src="instagram-footer.svg" />
+                </a>
+              </div>
+            </div>
           </div>
-          {/* <div>
-            <hr style={{ width: "200px", height: "4px", background: "red" }} />
-          </div> */}
         </div>
       </S.Wrapper>
     </>
