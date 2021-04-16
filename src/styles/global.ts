@@ -24,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         max-width: 1032px;
         margin: 0px auto;
+        position: relative;
     }
 
      .comment-user {
