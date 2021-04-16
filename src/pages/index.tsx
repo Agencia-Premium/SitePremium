@@ -16,13 +16,15 @@ export default function Home() {
   return (
     <div className="container">
       <GlobalStyle />
-      <Head>
+      <head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+      </head>
+     
       <header>
         <NavBar></NavBar>
+        <Head>
+        </Head>
       </header>
 
       <main>
