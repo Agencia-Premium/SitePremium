@@ -1,26 +1,28 @@
 import React from "react";
-import Button from "../Button";
-import { FaTimes } from 'react-icons/fa';
+import { FaTimes } from "react-icons/fa";
 import * as S from "./styles";
 
-type MenuMobileProps = {
-  onClick: () => void;
-}
+export type MenuMobileProps = {
+  isOpen: boolean;
+  toggle?: () => void;
+};
 
-const MenuMobile: React.FC<MenuMobileProps> = ({ onClick }) => {
+const MenuMobile: React.FC<MenuMobileProps> = ({  isOpen, toggle }) => {
   return (
     <>
-      <S.Wrapper>
-        <S.Icon onClick={onClick}>
+      <S.Wrapper isOpen={isOpen} onClick={toggle}>
+        <S.Icon onClick={toggle}>
           <FaTimes color="#fff" size={32} />
         </S.Icon>
-        <img src="logo.svg" />
-        <a>Início</a>
-        <a>Serviços</a>
-        <a>Sobre nós</a>
-        <a>Equipe</a>
-        <a>Projetos</a>
-        <Button scale="medium" background="yellow">Entre em contato</Button>
+        <S.MenuWrapper>
+          <S.Menu>
+            <S.LinkMenu href="">Início</S.LinkMenu>
+            <S.LinkMenu href="">Serviços</S.LinkMenu>
+            <S.LinkMenu href="">Sobre nós</S.LinkMenu>
+            <S.LinkMenu href="">Equipe</S.LinkMenu>
+            <S.LinkMenu href="">Projetos</S.LinkMenu>
+          </S.Menu>
+        </S.MenuWrapper>
       </S.Wrapper>
     </>
   );

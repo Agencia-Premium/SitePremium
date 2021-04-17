@@ -1,4 +1,27 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+export const appearFromLeft = keyframes`
+   from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+export const appearFromBottom = keyframes`
+   from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
 
 
 export const HeaderStyle = styled.div`
@@ -22,6 +45,8 @@ export const Left = styled.div`
     align-items: center;
     justify-content: center;
 
+    animation: ${appearFromLeft} 1s;
+
    h1{
        font-size: 8.6rem;
        font-weight: 700;
@@ -43,6 +68,8 @@ export const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: ${appearFromBottom} 1s;
+
 
     img {
         margin-top: 80px;

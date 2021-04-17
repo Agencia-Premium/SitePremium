@@ -3,16 +3,14 @@ import Link from "next/link";
 import { NavBarStyle, Left, Right, MobileIcon } from "./styles";
 import MenuMobile from "../MenuMobile";
 
-import { FaBars, FaToggleOn } from 'react-icons/fa';
-import { IconContext } from 'react-icons/lib';
+import { FaBars, FaToggleOn } from "react-icons/fa";
+import { IconContext } from "react-icons/lib";
 
-const NavBar: React.FC = ({}) => {
-  const [isOpen, setIsOpen] = useState(false);
+type NavbarProps = {
+  toggle: () => void;
+};
 
- const toggle = () => {
-     setIsOpen(!isOpen);
- }
-
+const NavBar: React.FC<NavbarProps> = ({ toggle }) => {
   return (
     <>
       <NavBarStyle>
@@ -23,28 +21,28 @@ const NavBar: React.FC = ({}) => {
           />
         </Left>
         <MobileIcon onClick={toggle}>
-            <FaBars />
+          <FaBars />
         </MobileIcon>
-        {isOpen ? <MenuMobile onClick={toggle} /> : <></>}
+        {/* {isOpen ? <MenuMobile onClick={toggle} /> : <></>} */}
         <Right>
           <ul>
             <Link href="/">
               <li>Início</li>
             </Link>
             <Link href="#">
-                <li>Serviços</li>
+              <li>Serviços</li>
             </Link>
             <Link href="sobre">
-                <li>Sobre nós</li>
+              <li>Sobre nós</li>
             </Link>
             <Link href="#">
-                <li>Equipe</li>
+              <li>Equipe</li>
             </Link>
             <Link href="#">
-                <li>Projetos</li>
+              <li>Projetos</li>
             </Link>
             <Link href="contact">
-                <li>Contato</li>
+              <li>Contato</li>
             </Link>
           </ul>
         </Right>

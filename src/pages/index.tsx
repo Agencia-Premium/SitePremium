@@ -1,8 +1,9 @@
 // importar os componentes
-import { ArrowBackIos as ArrowLeft } from "@styled-icons/material-outlined/ArrowBackIos";
-import { ArrowForwardIos as ArrowRight } from "@styled-icons/material-outlined/ArrowForwardIos";
-import Head from "next/head";
+
+import { useState } from "react";
+
 import NavBar from "../components/NavBar";
+import MenuMobile from '../components/MenuMobile'
 import Header from "../components/Header";
 import GlobalStyle from "../styles/global"; //estilo global.
 import Title from "../components/Title";
@@ -12,23 +13,30 @@ import CardsComponent from "../components/CardsComent";
 import Footer from "../components/Footer";
 import ColaborattorSlider from "../components/CollaboratorSlider";
 
+
 export default function Home() {
+  
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="container">
       <GlobalStyle />
       <head>
-        <title>Create Next App</title>
+        <title>Agência Premium</title>
         <link rel="icon" href="/favicon.ico" />
       </head>
-     
+
       <header>
-        <NavBar></NavBar>
-        <Head>
-        </Head>
+        <NavBar toggle={toggle} />
+        <MenuMobile isOpen={isOpen} toggle={toggle} />
       </header>
 
       <main>
-        <Header></Header>
+        <Header />
       </main>
       <section>
         <Title
