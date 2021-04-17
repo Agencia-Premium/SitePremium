@@ -33,6 +33,14 @@ const GlobalStyle = createGlobalStyle`
         flex-direction: column;
     }
 
+    .CardsSobre {
+        /* width: 100%; */
+        display: flex;
+        width: 1064px;
+        height: auto;
+        margin: auto;
+    }
+
 
         html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
