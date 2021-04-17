@@ -5,6 +5,7 @@ export const NavBarStyle = styled.div`
     width: 100%;
     height: 90px;
     display: flex;
+    /* position: relative; */
 `
 export const Left = styled.div`
     width: 20%;
@@ -38,5 +39,24 @@ export const Right = styled.div`
                 color: ${darken(0.12, 'rgba(241,241,241,1)')};
             }       
         }
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+`
+
+export const MobileIcon = styled.div`
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 2.5rem;
+        cursor: pointer;
+        color: #fff;
     }
 `
