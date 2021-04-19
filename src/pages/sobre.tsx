@@ -6,6 +6,7 @@ import HeaderSobre from "../components/HeaderSobre";
 import CardsSobre from "../components/CardsSobre";
 import Coments from "../components/Coments";
 import ImagemCenter from "../components/ImagemCenter";
+import CardProject from "../components/CardProject";
 
 export default function sobre() {
   return (
@@ -26,24 +27,32 @@ export default function sobre() {
           image="valores.svg"
           title="Nossos Valores:"
           subtitle="Valorização dos nossos colaboradores; Ter Ética e Princípios acima de tudo; Promover a inovação e o uso de novas tecnologias como cerne do nosso negócio;"
-          alt = "Nossos Valores"            
+          alt="Nossos Valores"
         />
         <CardsSobre
           image="missao.svg"
           title="Nossos Missão:"
           subtitle="Promover a resolução de problemas de nossos clientes e da sociedade por meio do Marketing, da Tecnologia e da Inovação com agilidade, ética e transparência."
-          alt = "Nossos Missão"            
+          alt="Nossos Missão"
         />
       </main>
       <section>
-        <Coments 
+        <Coments
           name="Conheça nosso História"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum"
         />
       </section>
 
       <section>
-        <ImagemCenter imagem="trilha.webp"/>
+        <ImagemCenter imagem="trilha.webp" />
+      </section>
+
+      <section>
+        <CardProject
+          Title="Nossos Projetos"
+          SubTitle="Conheça alguns de nossos projetos desenvolvidos na Agência Premium!"
+          image="projetomain.webp"
+        />
       </section>
       <footer>
         <Footer />
