@@ -41,6 +41,7 @@ export default function Home() {
       <section>
         <Title
           name="Nossos Serviços"
+          image="line_botton.svg"
           description="Desempenhamos diversas atividades e funções que tem como objetivo trazer seu negócio para o online, ou fazer com que ele ganha mais força e atraia potênciais clientes."
         />
         <Cardes></Cardes>
