@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 import NavBar from "../components/NavBar";
-import MenuMobile from '../components/MenuMobile'
+import MenuMobile from "../components/MenuMobile";
 import Header from "../components/Header";
 import GlobalStyle from "../styles/global"; //estilo global.
 import Title from "../components/Title";
@@ -12,13 +12,12 @@ import Clients from "../components/Clients";
 import CardsComponent from "../components/CardsComent";
 import Footer from "../components/Footer";
 import ColaborattorSlider from "../components/CollaboratorSlider";
-import { Comments } from '../components/CardsComent/constants'
-
+import { Comments } from "../components/CardsComent/constants";
+import Parceiros from "../components/Parceiros";
 
 export default function Home() {
-  
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const toggle = () => {
     setIsOpen(!isOpen);
   };
@@ -52,30 +51,37 @@ export default function Home() {
         <Title
           name="Nossos Clientes"
           description="Estes são alguns de nossos clientes."
+          image="line_botton.svg"
         />
         <Clients />
       </section>
       <section className="comment-user">
-
-        {Comments.map(( item, index ) => {
-         return <CardsComponent key={index} image={item.image} title={item.title} description={item.description} align={item.align} />
+        {Comments.map((item, index) => {
+          return (
+            <CardsComponent
+              key={index}
+              image={item.image}
+              title={item.title}
+              description={item.description}
+              align={item.align}
+            />
+          );
         })}
       </section>
 
       <section>
-        <Title
-          name="Nossos Parceiros"
-        />
+        <Title name="Nossos Parceiros" image="line_botton.svg" />
+        <Parceiros />
       </section>
 
-      <Title name="Nossos Colaboradores" />
+      <Title name="Nossos Colaboradores" image="line_botton.svg" />
       <section className="collaborators">
         <ColaborattorSlider />
       </section>
 
-      {/* <footer>
+      <footer>
         <Footer />
-      </footer> */}
+      </footer>
     </div>
   );
 }
