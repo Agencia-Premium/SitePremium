@@ -12,6 +12,7 @@ import Clients from "../components/Clients";
 import CardsComponent from "../components/CardsComent";
 import Footer from "../components/Footer";
 import ColaborattorSlider from "../components/CollaboratorSlider";
+import { Comments } from '../components/CardsComent/constants'
 
 
 export default function Home() {
@@ -54,7 +55,16 @@ export default function Home() {
         <Clients />
       </section>
       <section className="comment-user">
-        <CardsComponent />
+
+        {Comments.map(( item, index ) => {
+         return <CardsComponent key={index} image={item.image} title={item.title} description={item.description} align={item.align} />
+        })}
+      </section>
+
+      <section>
+        <Title
+          name="Nossos Parceiros"
+        />
       </section>
 
       <Title name="Nossos Colaboradores" />

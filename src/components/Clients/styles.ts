@@ -8,6 +8,11 @@ export const ClientsSection = styled.section`
     max-width: 1032px;
     margin: 0 auto;
 
+    @media screen and (max-width: 426px) {
+      min-width: 100%;
+      margin: 20px 0 0 10px;
+    }
+
     .logo-list {
       display: grid;
       gap: 24px;

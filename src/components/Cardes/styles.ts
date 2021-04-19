@@ -5,7 +5,7 @@ export const ContainerCards = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    margin: 50px 0;
+    margin: 50px 0 10px 0;
 `
 export const Cards = styled.div`
     width: 328px;
@@ -14,6 +14,10 @@ export const Cards = styled.div`
     background: rgba(11,11,11,0.5);
     margin: 12px;
     text-align: left;
+
+    @media screen and (max-width: 426px) {
+        height: 180px;
+    }
 
     :hover {
         transform: scale(1.02);
@@ -30,6 +34,10 @@ export const Cards = styled.div`
         /* margin: 16px 35px 2px 20px; */
         padding: 16px 0;
         text-align: center;
+
+        @media screen and (max-width: 426px) {
+            font-size: 2.6rem;
+        }
         
     }
 
@@ -43,5 +51,9 @@ export const Cards = styled.div`
         padding: 2px 20px;
         text-align: center;
         text-align: justify;
+
+        @media screen and (max-width: 426px) {
+            font-size: 1.6rem;
+        }
     }
 `

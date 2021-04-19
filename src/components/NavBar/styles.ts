@@ -17,7 +17,6 @@ export const NavBarStyle = styled.div`
   height: 90px;
   display: flex;
   animation: ${appearFromTop} 1s;
-  /* position: relative; */
 `;
 
 export const Left = styled.div`

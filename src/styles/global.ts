@@ -27,11 +27,11 @@ const GlobalStyle = createGlobalStyle`
         position: relative;
     }
 
-     .comment-user {
+     /* .comment-user {
         width: 100%;
         display: flex;
         flex-direction: column;
-    }
+    } */
 
     .CardsSobre {
         /* width: 100%; */
