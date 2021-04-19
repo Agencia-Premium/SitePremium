@@ -35,6 +35,7 @@ export const Right = styled.div`
         font-weight: 700;
         color: #efefef;
         margin-bottom: 8px;
+        font-family:"Inter"
     }
     
     p {
