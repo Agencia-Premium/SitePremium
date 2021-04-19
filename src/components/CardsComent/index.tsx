@@ -1,11 +1,59 @@
 import React from "react";
 
-import { ContainerComent, Grade, Left, Right } from "./style";
+import * as S from "./styles";
 
-const ContainerComentario: React.FC = ({}) => {
+export type CardsCommentProps = {
+  image: string;
+  title: string;
+  description: string;
+  align?: string;
+};
+
+const ContainerComentario: React.FC<CardsCommentProps> = ({
+  image,
+  title,
+  description,
+  align,
+}) => {
   return (
     <>
-      <ContainerComent>
+      <S.Wrapper>
+        {align === "start" ? (
+          <>
+            <div className="column-one">
+              <S.Card align={align}>
+                <img className="left" src="AspasEsquerda.svg" />
+                <img className="right" src="AspasDireita.svg" />
+                <div className="container-left">
+                  <img src={image} />
+                </div>
+                <div className="container-right">
+                  <h2>{title}</h2>
+                  <p>{description}</p>
+                </div>
+              </S.Card>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="column-two">
+              <S.Card align={align}>
+                <img className="left" src="AspasEsquerda.svg" />
+                <img className="right" src="AspasDireita.svg" />
+                <div className="container-right">
+                  <h2>{title}</h2>
+                  <p>{description}</p>
+                </div>
+                <div className="container-left">
+                  <img src={image} />
+                </div>
+              </S.Card>
+            </div>
+          </>
+        )}
+      </S.Wrapper>
+
+      {/* <ContainerComent>
         <div className="grade-left">
           <Grade>
             <img className="AspasEsquerda" src="AspasEsquerda.svg" />
@@ -41,7 +89,7 @@ const ContainerComentario: React.FC = ({}) => {
             <img className="AspasDireita" src="AspasDireita.svg" />
           </Grade>
         </div>
-      </ContainerComent>
+      </ContainerComent> */}
     </>
   );
 };

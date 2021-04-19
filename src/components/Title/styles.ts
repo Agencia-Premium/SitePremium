@@ -9,6 +9,8 @@ export const NameTitulo = styled.h1`
   margin: 82px 0 0;
 `;
 export const LineBotton = styled.div`
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,12 +19,14 @@ export const LineBotton = styled.div`
 export const SubTitulo = styled.p`
   font-size: 18px;
   font-weight: 400;
-  text-align: center;
   font-family: "Inter";
   color: rgba(223, 223, 223, 1);
-  margin: 35px 0 0;
-  width: 1032px;
-  height: 49px;
+  padding: 20px 0 0 0;
   line-height: 24px;
-  f
+
+  @media screen and (max-width: 426px) {
+    font-size: 16px;
+    text-align: justify;
+    padding: 20px 20px 0px 20px;
+  }
 `;
