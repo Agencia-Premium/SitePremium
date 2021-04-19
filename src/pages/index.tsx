@@ -69,13 +69,12 @@ export default function Home() {
 
       <Title name="Nossos Colaboradores" />
       <section className="collaborators">
-        {/* Collaborators */}
         <ColaborattorSlider />
       </section>
 
-      <footer>
+      {/* <footer>
         <Footer />
-      </footer>
+      </footer> */}
     </div>
   );
 }

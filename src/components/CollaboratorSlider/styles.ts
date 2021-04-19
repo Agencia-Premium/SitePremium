@@ -5,10 +5,10 @@ import { CollaboratorSliderProps } from ".";
 type WrapperProps = Pick<CollaboratorSliderProps, "color">;
 
 export const Wrapper = styled.section<WrapperProps>`
-  /* background: red; */
   min-width: 100%;
-  /* margin: 0 auto; */
-  /* position: relative; */
+  /* max-width: 1036px; */
+  margin-top: 20px;
+  overflow: hidden;
 
   ${({ color }) => css`
     ${media.lessThan("huge")`
@@ -18,29 +18,41 @@ export const Wrapper = styled.section<WrapperProps>`
     .slick-list {
       display: flex;
     }
+
+    .slick-slide {
+      min-width: 328px;
+      /* height: 345px; */
+      /* margin-left: 20px; */
+
+      @media screen and (max-width: 426px) {
+        margin-left: 30px;
+      }
+    }
+
     .slick-slide > div {
-      margin: 0 12px;
-      flex: 1 0 auto;
+      margin: 0 22px;
+
       height: 100%;
     }
     .slick-list {
-      margin: 0 -12px;
+      margin: 0 -22px;
     }
+
     ${media.greaterThan("large")`
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+
       .slick-slide > div {
         margin: 0 24px;
       }
       .slick-list {
-        margin: 0 -24px;
+        margin: 0 0px;
       }
     `}
     .slick-prev,
     .slick-next {
       display: block;
-      /* background: #fff; */
       color: #fff;
       cursor: pointer;
       position: absolute;
@@ -49,7 +61,6 @@ export const Wrapper = styled.section<WrapperProps>`
       height: 2.5rem;
       padding: 0;
       transform: translate(0, -50%);
-      /* overflow: hidden; */
     }
     .slick-prev {
       left: -60px;

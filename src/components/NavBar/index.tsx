@@ -7,7 +7,7 @@ import { FaBars, FaToggleOn } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
 type NavbarProps = {
-  toggle: () => void;
+  toggle?: () => void;
 };
 
 const NavBar: React.FC<NavbarProps> = ({ toggle }) => {

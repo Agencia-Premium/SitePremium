@@ -20,21 +20,21 @@ const settings: Settings = {
       breakpoint: 1375,
       settings: {
         arrows: false,
-        slidesToShow: 2.2,
+        slidesToShow: 3,
       },
     },
     {
       breakpoint: 570,
       settings: {
         arrows: false,
-        slidesToShow: 1.2,
+        slidesToShow: 1,
       },
     },
     {
       breakpoint: 375,
       settings: {
         arrows: false,
-        slidesToShow: 1.1,
+        slidesToShow: 1,
       },
     },
   ],

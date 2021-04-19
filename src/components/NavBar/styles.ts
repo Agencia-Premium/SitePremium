@@ -25,6 +25,13 @@ export const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  img {
+    @media screen and (max-width: 426px) {
+      margin-left: 40px;
+    }
+
+  }
 `;
 export const Right = styled.div`
   width: 80%;

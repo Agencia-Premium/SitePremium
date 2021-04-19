@@ -58,5 +58,6 @@ export const Collaborators = [
             linkedin: 'https://www.linkedin.com/in/gustavo-castilho-914a621b4/',
             twitter: 'https://twitter.com/gustavocvalenc1'
         }
-    }
+    },
+    
 ]

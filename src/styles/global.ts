@@ -22,8 +22,8 @@ const GlobalStyle = createGlobalStyle`
     .collaborators {
         display: flex;
         align-items: center;
-        max-width: 1032px;
-        margin: 0px auto;
+        max-width: 1080px;
+        margin: 0px auto; 
         position: relative;
     }
 
