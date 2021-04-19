@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {NameTitulo, LineBotton, SubTitulo} from './styles';
+import {TituloName, LineBotton, SubTitulo} from './styles';
 
 type TitleProps = {
     name: string;
@@ -8,11 +8,11 @@ type TitleProps = {
     image?: string;
 }
 
-const Title: React.FC<TitleProps> = ({ name, description, image }) => {
+const Coments: React.FC<TitleProps> = ({ name, description, image }) => {
     return(
         <>
             <LineBotton>
-                <NameTitulo>{name}</NameTitulo>
+                <TituloName>{name}</TituloName>
                 <img src={image}/>
                 {description && <SubTitulo>{description}</SubTitulo>}
             </LineBotton>
@@ -22,4 +22,4 @@ const Title: React.FC<TitleProps> = ({ name, description, image }) => {
 
 }
 
-export default Title;
+export default Coments;

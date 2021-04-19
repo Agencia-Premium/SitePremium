@@ -4,6 +4,8 @@ import GlobalStyle from "../styles/global";
 import Footer from "../components/Footer";
 import HeaderSobre from "../components/HeaderSobre";
 import CardsSobre from "../components/CardsSobre";
+import Coments from "../components/Coments";
+import ImagemCenter from "../components/ImagemCenter";
 
 export default function sobre() {
   return (
@@ -33,7 +35,16 @@ export default function sobre() {
           alt = "Nossos Missão"            
         />
       </main>
+      <section>
+        <Coments 
+          name="Conheça nosso História"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum"
+        />
+      </section>
 
+      <section>
+        <ImagemCenter imagem="trilha.webp"/>
+      </section>
       <footer>
         <Footer />
       </footer>
