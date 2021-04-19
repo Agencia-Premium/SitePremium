@@ -22,6 +22,6 @@ export const SubTitulo = styled.p`
   color: rgba(223, 223, 223, 1);
   margin: 35px 0 0;
   width: 1032px;
-  height: 196px;
+  height: auto;
   line-height: 24px;
 `;
