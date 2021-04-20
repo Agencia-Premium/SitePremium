@@ -43,6 +43,7 @@ export const Right = styled.div`
       font-size: 2.6rem;
       font-weight: 700;
       text-align: center;
+      cursor: pointer;
       
 
   }

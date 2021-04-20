@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '../Button';
+
 
 import { ContainerProject, Right, Left} from "./styled";
 
@@ -18,7 +20,7 @@ const CardProject: React.FC<CardProjectProps> = ({Title, SubTitle, image}) => {
             <Right>
                 <h2>{Title}</h2>
                 <p>{SubTitle}</p>
-                <button id="ver">Ver</button>
+                <Button scale="xsmall" background="yellow" >Ver</Button>
             </Right>
 
 
