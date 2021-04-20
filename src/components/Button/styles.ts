@@ -43,6 +43,11 @@ const WrapperModifiers = {
     font-size: 16px;
     font-weight: bold;
     font-family: "Inter";
+
+    @media screen and (max-width: 426px) {
+      width: 300px;
+      height: 48px;
+    }
   `,
   gray: () => css`
     background-color: #333;

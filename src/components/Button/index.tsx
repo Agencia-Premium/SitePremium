@@ -1,11 +1,13 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 import * as S from "./styles";
+
+type ButtonAttributes = ButtonHTMLAttributes<HTMLButtonElement>
 
 export type ButtonProps = {
   scale?: "small"| 'xsmall' | "medium" | "xmedium";
   background?: "gray" | "yellow";
   icon?: string;
-};
+} & ButtonAttributes;
 
 const Button: React.FC<ButtonProps> = ({
   scale = "medium",

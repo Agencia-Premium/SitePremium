@@ -6,18 +6,11 @@ const GlobalStyle = createGlobalStyle`
         background-color: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
     }
     .container {
-        width: 100%;
-        height: 100%;
+        min-width: 100%;
+        min-height: 100%;
         background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
     }
-    .conteinerForme {
-        margin-top: 54px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+
     
     .collaborators {
         display: flex;
@@ -42,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
 
-        html, body, div, span, applet, object, iframe,
+    html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
