@@ -14,6 +14,21 @@ const WrapperModifiers = {
     margin-top: 10px;
   `,
 
+  xsmall: () => css` 
+    position: relative;
+      width: 243px;
+      height: 57px;
+      background: #fdd028;
+      border-radius: 8px;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+      font-size: 2.6rem;
+      font-weight: 700;
+      text-align: center;
+      cursor: pointer;
+  `,
+
   xmedium: () => css`
     width: 258px;
     height: 52px;

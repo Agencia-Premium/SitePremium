@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./styles";
 
 export type ButtonProps = {
-  scale?: "small" | "medium" | "xmedium";
+  scale?: "small"| 'xsmall' | "medium" | "xmedium";
   background?: "gray" | "yellow";
   icon?: string;
 };
