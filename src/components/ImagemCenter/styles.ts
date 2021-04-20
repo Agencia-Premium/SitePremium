@@ -5,7 +5,11 @@ export const ContainerImg = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    width: 100%;
-    height: 100%;    
+    height: 305px;    
     margin: 55px 0 134px 0;
+   
+   img {
+       width:100%;
+   }
+    
 `
