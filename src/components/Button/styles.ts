@@ -13,6 +13,15 @@ const WrapperModifiers = {
     font-family: "Inter";
     margin-top: 10px;
   `,
+
+  xmedium: () => css`
+    width: 258px;
+    height: 52px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+  `,
+
   medium: () => css`
     width: 416px;
     height: 48px;
@@ -24,6 +33,7 @@ const WrapperModifiers = {
     background-color: #333;
     color: #ccc;
     transition: all 0.2s ease-in-out;
+    
     :hover {
       background: ${darken(0.02, "#333")};
     }

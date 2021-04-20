@@ -40,7 +40,7 @@ export const BgLinha = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
 
     background-position: center bottom;
@@ -113,13 +113,13 @@ export const Right = styled.div`
     @media screen and (max-width: 768px) {
       width: 460px;
       height: 560px;
+      opacity: 0.3;
     }
 
     @media screen and (max-width: 426px) {
       width: 100%;
       width: 320px;
       height: 420px;
-      opacity: 0.3;
       /* position: absolute; */
 
       margin-top: 20px;

@@ -1,19 +1,21 @@
-import React from "react";
+import React, { InputHTMLAttributes } from "react";
 import * as S from "./styles";
+
+type InputAttributesProps = InputHTMLAttributes<HTMLInputElement>;
 
 export type InputProps = {
   background?: "gray" | "transparent";
   scale?: "small" | "medium" | "large";
   marginBottom?: boolean;
   placeholder?: string;
-
-};
+} & InputAttributesProps;
 
 const Input: React.FC<InputProps> = ({
   background = "gray",
   scale = "medium",
   marginBottom = true,
-  placeholder
+  placeholder,
+  ...props
 }) => {
   return (
     <>
@@ -22,6 +24,7 @@ const Input: React.FC<InputProps> = ({
         background={background}
         scale={scale}
         marginBottom={marginBottom}
+        {...props}
       ></S.Wrapper>
     </>
   );

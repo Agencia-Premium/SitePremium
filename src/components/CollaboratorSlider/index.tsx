@@ -24,6 +24,13 @@ const settings: Settings = {
       },
     },
     {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2
+      }
+    },
+    {
       breakpoint: 570,
       settings: {
         arrows: false,

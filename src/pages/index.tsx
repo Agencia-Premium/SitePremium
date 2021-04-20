@@ -24,11 +24,11 @@ export default function Home() {
 
   return (
     <div className="container">
+      <header>
       <GlobalStyle />
-      <head>
         <title>Agência Premium</title>
         <link rel="icon" href="/favicon.ico" />
-      </head>
+      </header>
 
       <header>
         <NavBar toggle={toggle} />
