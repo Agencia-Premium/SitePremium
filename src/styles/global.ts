@@ -11,13 +11,7 @@ const GlobalStyle = createGlobalStyle`
         background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
     }
 
-    .CardsSobre {
-        /* width: 100%; */
-        display: flex;
-        width: 1064px;
-        height: auto;
-        margin: auto;
-    }
+ 
 
     html, body {
         background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);

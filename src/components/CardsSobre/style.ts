@@ -6,6 +6,10 @@ export const ContainerSobre = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+    }
 `
 
 export const GradeLeft = styled.div`
@@ -16,6 +20,17 @@ export const GradeLeft = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+
+    @media screen and (max-width: 768px) {
+        width: 450px;
+        height: 157px;
+    }
+
+    @media screen and (max-width: 426px) {
+        width: 350px;
+        height: 157px;
+    }
+
 `
 
 export const Left = styled.div`
@@ -35,7 +50,11 @@ export const Right = styled.div`
         font-weight: 700;
         color: #efefef;
         margin-bottom: 8px;
-        font-family:"Inter"
+        font-family:"Inter";
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.8rem;
+        }
     }
     
     p {
@@ -45,6 +64,10 @@ export const Right = styled.div`
         line-height: 2rem;
         color: #acacac;
         margin: 0 0 0 0;
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.2rem;
+        }
     }
 
 
