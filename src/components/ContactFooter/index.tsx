@@ -8,17 +8,17 @@ const FooterContact: React.FC = ({}) => {
       <ContainerContact>
         <div className="container-footer">
           <div>
-            <img src="phone.svg" />
+            <img src="phone.svg" alt="icone do telefone" />
           </div>
           <a href="tel:6940028922">(69) 4002-8922</a>
 
           <div>
-            <img src="mail.svg" />
+            <img src="mail.svg" alt="icone do email" />
           </div>
 
           <a href="mailto:contato@agenciapremium.com.br">contato@agenciapremium.com.br</a>
           <div>
-            <img src="local.svg" />
+            <img src="local.svg" alt="icone de localização" />
           </div>
 
           <a href="https://maps.google.com/?q=-10.880192638184282,-61.94600214949904" target="_blank">Rua 2 de Abril</a>

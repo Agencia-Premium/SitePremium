@@ -15,7 +15,7 @@ const CardProject: React.FC<CardProjectProps> = ({Title, SubTitle, image}) => {
         <>
         <ContainerProject>
             <Left>
-                <img src={image}/>
+                <img src={image} alt="foto mostrando os projetos da agência premium" />
             </Left>
             <Right>
                 <h2>{Title}</h2>

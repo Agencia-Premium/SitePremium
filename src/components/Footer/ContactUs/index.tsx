@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <S.Wrapper>
         <div className="contato">
           <div className="left">
-            <h6>Pronto para começar ?</h6>
+            <h1>Pronto para começar ?</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               vel nibh augue. Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
               <div className="circle-one" />
               <img src="logo.svg" alt="logo premium na cor dourada com os textos na cor branca" />
               <div className="content-menu">
-                <h6>Menu</h6>
+                <h1>Menu</h1>
                 <p>Início</p>
                 <p>Clients</p>
                 <p>Colaboradores</p>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
                 <p>Quem somos</p>
               </div>
               <div className="three-menu">
-                <h6>Fique por dentro das novidades!</h6>
+                <h1>Fique por dentro das novidades!</h1>
 
                 <Input
                   background="gray"
@@ -61,10 +61,10 @@ const Footer: React.FC = () => {
                 <a href="#">
                   <img src="linkedin-footer.svg" alt="icone do linkedin" />
                 </a>
-                <a>
+                <a href="#">
                   <img src="facebook-footer.svg" alt="icone do facebook" />
                 </a>
-                <a>
+                <a href="#">
                   <img src="instagram-footer.svg" alt="icone do instagram" />
                 </a>
               </div>

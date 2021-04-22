@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
         {...props}
       >
         {children}
-        {!!icon && <img src={icon} style={{ width: '20px', height: '20px', marginLeft: '4px' }} />}
+        {!!icon && <img src={icon} style={{ width: '20px', height: '20px', marginLeft: '4px' }} alt="ícone do botão" />}
       </S.Wrapper>
     </>
   );
