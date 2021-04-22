@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           <div className="content">
             <div className="box-menu">
               <div className="circle-one" />
-              <img src="logo.svg" />
+              <img src="logo.svg" alt="logo premium na cor dourada com os textos na cor branca" />
               <div className="content-menu">
                 <h6>Menu</h6>
                 <p>Início</p>
@@ -59,13 +59,13 @@ const Footer: React.FC = () => {
               <p>® 2021 Agência Premium | All Rights Reserved | Privacity</p>
               <div className="social-media">
                 <a href="#">
-                  <img src="linkedin-footer.svg" />
+                  <img src="linkedin-footer.svg" alt="icone do linkedin" />
                 </a>
                 <a>
-                  <img src="facebook-footer.svg" />
+                  <img src="facebook-footer.svg" alt="icone do facebook" />
                 </a>
                 <a>
-                  <img src="instagram-footer.svg" />
+                  <img src="instagram-footer.svg" alt="icone do instagram" />
                 </a>
               </div>
             </div>

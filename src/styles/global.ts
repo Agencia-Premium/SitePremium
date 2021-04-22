@@ -11,21 +11,6 @@ const GlobalStyle = createGlobalStyle`
         background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
     }
 
-    
-    .collaborators {
-        display: flex;
-        align-items: center;
-        max-width: 1080px;
-        margin: 0px auto; 
-        position: relative;
-    }
-
-     /* .comment-user {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    } */
-
     .CardsSobre {
         /* width: 100%; */
         display: flex;
@@ -34,6 +19,9 @@ const GlobalStyle = createGlobalStyle`
         margin: auto;
     }
 
+    html, body {
+        background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
+    }
 
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,

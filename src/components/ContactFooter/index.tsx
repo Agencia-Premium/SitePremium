@@ -10,18 +10,18 @@ const FooterContact: React.FC = ({}) => {
           <div>
             <img src="phone.svg" />
           </div>
-          <p>(69) 4002-8922</p>
+          <a href="tel:6940028922">(69) 4002-8922</a>
 
           <div>
             <img src="mail.svg" />
           </div>
 
-          <p>contato@agenciapremium.br</p>
+          <a href="mailto:contato@agenciapremium.com.br">contato@agenciapremium.com.br</a>
           <div>
             <img src="local.svg" />
           </div>
 
-          <p>Rua 2 de Abril</p>
+          <a href="https://maps.google.com/?q=-10.880192638184282,-61.94600214949904" target="_blank">Rua 2 de Abril</a>
         </div>
         <img className="circlo" src="circulo.svg" />
       </ContainerContact>

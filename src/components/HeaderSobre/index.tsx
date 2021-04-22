@@ -7,7 +7,7 @@ const HeaderSobre: React.FC = ({}) => {
             <HeaderContainer>
                 <BkgContainer>
                     <Left>
-                        <img src="TrofeuSobre.webp"></img>
+                        <img src="TrofeuSobre.webp" alt="troféu dourado" />
                     </Left>
                     <Right>
                         <h1>Conheça a <br/><span>Premium!</span></h1>

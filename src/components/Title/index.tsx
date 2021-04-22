@@ -13,7 +13,7 @@ const Title: React.FC<TitleProps> = ({ name, description, image }) => {
         <>
             <LineBotton>
                 <NameTitulo>{name}</NameTitulo>
-                <img src={image}/>
+                <img src={image} alt="linha na cor amarela embaixo do texto" />
                 {description && <SubTitulo>{description}</SubTitulo>}
             </LineBotton>
             
