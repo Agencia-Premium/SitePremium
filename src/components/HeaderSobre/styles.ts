@@ -62,6 +62,7 @@ export const ContainerText = styled.div`
     color: #ffffff;
     font-size: 9rem;
     text-align: right;
+    font-family: "Inter";
 
     @media screen and (max-width: 768px) {
       font-size: 5rem;
