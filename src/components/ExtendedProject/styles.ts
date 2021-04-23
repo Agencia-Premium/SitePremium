@@ -69,13 +69,7 @@ export const Galery = styled.div`
       flex-direction: row;
       margin: 0 auto;
 
-      .squad {
-      /* width: 100%;
-      height:100%; */
-      display: flex;
-      align-items: center;
-      flex-direction: row;
   }
-  }
+  
   
 `;

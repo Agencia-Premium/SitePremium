@@ -4,8 +4,8 @@ import NavBar from '../components/NavBar'
 import Footer from '../components/Footer';
 import TitleProject from '../components/TitleProject';
 import Coments from '../components/Coments';
-import ImageProject from '../components/ImagemProjeto';
-import { Card } from '../components/ImagemProjeto/constants';
+// import ImageProject from '../components/ImagemProjeto';
+// import { Card } from '../components/ImagemProjeto/constants';
 
 export default function ourproject() {
   return(
@@ -31,11 +31,11 @@ export default function ourproject() {
         <Coments name="Nosso projetos"/>
       </main>
 
-      <section className="gallery">
+      {/* <section className="gallery">
         { Card.map((item, index)=>{
           return <ImageProject key={index} imagem={ item.imagem} titulo={item.titulo} subTitulo={item.subTitulo}  arrow="arrow.svg"/>
         })}     
-      </section>
+      </section> */}
       
       <footer>
         <Footer />
