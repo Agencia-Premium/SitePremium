@@ -4,15 +4,17 @@ import NavBar from '../components/NavBar'
 import Footer from '../components/Footer';
 import TitleProject from '../components/TitleProject';
 import Coments from '../components/Coments';
+import ImageProject from '../components/ImageProject';
+import { Card } from '../components/ImageProject/constants';
 
 export default function ourproject() {
   return(
     <div className="container">
       <GlobalStyle />
-      <head>
+      <header>
         <title>Nossos Projetos</title>
         <link rel="icon" href="favicon.ico"/>
-      </head>
+      </header>
 
       <header>
         <NavBar />
@@ -29,8 +31,10 @@ export default function ourproject() {
         <Coments name="Nosso projetos"/>
       </main>
 
-      <section>
-        
+      <section className="gallery">
+        { Card.map((item, index)=>{
+          return <ImageProject key={index} imagem={ item.imagem} titulo={item.titulo} subTitulo={item.subTitulo}  arrow="arrow.svg"/>
+        })}     
       </section>
       
       <footer>
