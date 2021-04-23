@@ -5,7 +5,7 @@ export const ContainerImg = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    height: 305px;    
+    /* height: 305px;     */
     margin: 80px 0 134px 0;
    
    img {

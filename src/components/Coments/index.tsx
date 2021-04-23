@@ -13,7 +13,7 @@ const Coments: React.FC<TitleProps> = ({ name, description, image }) => {
         <>
             <LineBotton>
                 <TituloName>{name}</TituloName>
-                <img src={image}/>
+                {/* <img src={image} alt="imagem do comentário" /> */}
                 {description && <SubTitulo>{description}</SubTitulo>}
             </LineBotton>
             

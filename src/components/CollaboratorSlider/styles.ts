@@ -6,8 +6,10 @@ type WrapperProps = Pick<CollaboratorSliderProps, "color">;
 
 export const Wrapper = styled.section<WrapperProps>`
   min-width: 100%;
-  /* max-width: 1036px; */
-  margin-top: 20px;
+  
+  max-width: 1036px;
+  /* margin-top: 20px; */
+  margin: 0 auto;
   overflow: hidden;
 
   ${({ color }) => css`

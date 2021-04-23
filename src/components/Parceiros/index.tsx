@@ -8,7 +8,7 @@ const Parceiros: React.FC = ({}) => {
         <>
             <S.Wrapper>
                 {ListParceiros.map(( item, index ) => {
-                    return <img key={index} src={item.image} />
+                    return <img key={index} src={item.image} alt="Foto da logo dos nossos parceiros" />
                 })}
             </S.Wrapper>
         </>

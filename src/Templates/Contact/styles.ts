@@ -7,26 +7,29 @@ const appearFromAviao = keyframes`
 
     }
     100% {
-        bottom: 85%;
-        left: 85%;
+        bottom: 70%;
+        left: 70%;
         display: none;
     }
 `;
 
 const appearFromCongratulations = keyframes`
     0% {
-        bottom: 20%;
+        top: 30%;
+    }
+    80% {
+        top: 35%;
     }
     100% {
-        bottom: 25%;
+      top: 30%;
     }
 `;
 
 export const Wrapper = styled.div`
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(111.34deg, #545454 0%, #0b0b0b 100%);
-  position: relative;
+    position: relative;
 
   .conteinerForme {
     margin-top: 54px;
@@ -35,6 +38,30 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    .container-error {
+      height: 40px;
+      display: flex;
+      border-radius: 12px;
+      padding: 0 20px;
+      align-items: center;
+      justify-content: center;
+      background-color: #DC143C;
+
+      margin-bottom: 40px;
+
+      span {
+        font-size: 16px;
+        color: #fefe;
+        font-family: "Inter";
+        font-weight: 700;
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
   }
 `;
 
@@ -43,8 +70,8 @@ export const WrapperIcon = styled.div`
   height: 100%;
   min-height: 300px;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 
   span {
     font-size: 24px;
@@ -53,9 +80,13 @@ export const WrapperIcon = styled.div`
     font-family: "Inter";
   }
 
+  .success {
+    padding-top: 200px;
+  }
+
   .aviao {
     position: absolute;
-    animation: ${appearFromAviao} 4s infinite;
+    animation: ${appearFromAviao} 3s infinite;
   }
 
   .congratulations {

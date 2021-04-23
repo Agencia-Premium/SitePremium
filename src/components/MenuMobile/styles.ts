@@ -30,11 +30,11 @@ export const MenuWrapper = styled.div`
 export const Menu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 80px);
+  grid-template-rows: repeat(6, 80px);
   text-align: center;
   text-decoration: none;
   @media screen and (max-width: 768px) {
-    grid-template-rows: repeat(5, 60px);
+    grid-template-rows: repeat(6, 60px);
   }
 
   a {

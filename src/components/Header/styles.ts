@@ -58,7 +58,7 @@ export const Left = styled.div`
 
   animation: ${appearFromLeft} 1s;
 
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 920px) {
     width: 100%;
   }
 
@@ -70,9 +70,15 @@ export const Left = styled.div`
     line-height: 92px;
     padding: 0 0 14px 0;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 920px) {
       font-size: 6rem;
       line-height: 70px;
+      padding: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 5rem;
+      line-height: 60px;
     }
 
     @media screen and (max-width: 426px) {
@@ -89,9 +95,15 @@ export const Left = styled.div`
     font-family: "Inter";
     line-height: 36px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 920px) {
       font-size: 2rem;
       line-height: 30px;
+
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.8rem;
+      line-height: 28px;
     }
 
     @media screen and (max-width: 426px) {
@@ -107,12 +119,22 @@ export const Right = styled.div`
   justify-content: center;
   animation: ${appearFromBottom} 1s;
 
+  @media screen and (max-width: 920px) {
+    width: 100%;
+  }
+
   img {
     margin-top: 80px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1125px) {
       width: 460px;
       height: 560px;
+    }
+
+    @media screen and (max-width: 920px) {
+      width: 400px;
+      height: 500px;
+      margin-top: 20px;
       opacity: 0.3;
     }
 
@@ -120,9 +142,6 @@ export const Right = styled.div`
       width: 100%;
       width: 320px;
       height: 420px;
-      /* position: absolute; */
-
-      margin-top: 20px;
     }
   }
 `;

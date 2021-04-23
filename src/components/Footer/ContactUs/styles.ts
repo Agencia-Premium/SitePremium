@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1160px) {
     display: none;
   }
 
@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
       justify-content: center;
     }
 
-    .left h6 {
+    .left h1 {
       padding-left: 40px;
       font-size: 28px;
       font-weight: 700;
@@ -64,7 +64,7 @@ export const Wrapper = styled.div`
       width: 600px;
       height: 320px;
 
-      .left h6 {
+      .left h1 {
         font-size: 20px;
         padding-left: 10px;
       }
@@ -99,7 +99,7 @@ export const Wrapper = styled.div`
   div.content-menu {
     margin-left: 100px;
 
-    h6 {
+    h1 {
       font-size: 20px;
       font-weight: 700;
       color: #fff;
@@ -139,7 +139,7 @@ export const Wrapper = styled.div`
   div.three-menu {
     margin-left: 162px;
 
-    h6 {
+    h1 {
       font-size: 20px;
       font-weight: 700;
       color: #fff;
@@ -212,7 +212,7 @@ export const FooterMobile = styled.footer`
   display: none;
   margin-top: 20px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1160px) {
     display: flex;
     flex-direction: column;
     width: 100%;

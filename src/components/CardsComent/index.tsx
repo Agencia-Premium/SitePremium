@@ -22,10 +22,10 @@ const ContainerComentario: React.FC<CardsCommentProps> = ({
           <>
             <div className="column-one">
               <S.Card align={align}>
-                <img className="left" src="AspasEsquerda.svg" />
-                <img className="right" src="AspasDireita.svg" />
+                <img className="left" src="AspasEsquerda.svg" alt="aspas na cor preta" />
+                <img className="right" src="AspasDireita.svg" alt="aspas na cor preta" />
                 <div className="container-left">
-                  <img src={image} />
+                  <img src={image} alt="logo da empresa riobeef" />
                 </div>
                 <div className="container-right">
                   <h2>{title}</h2>
@@ -38,14 +38,14 @@ const ContainerComentario: React.FC<CardsCommentProps> = ({
           <>
             <div className="column-two">
               <S.Card align={align}>
-                <img className="left" src="AspasEsquerda.svg" />
-                <img className="right" src="AspasDireita.svg" />
+                <img className="left" src="AspasEsquerda.svg" alt="aspas na cor preta" />
+                <img className="right" src="AspasDireita.svg" alt="aspas na cor preta" />
                 <div className="container-right">
                   <h2>{title}</h2>
                   <p>{description}</p>
                 </div>
                 <div className="container-left">
-                  <img src={image} />
+                  <img src={image} alt="logo da empresa fórmula X" />
                 </div>
               </S.Card>
             </div>

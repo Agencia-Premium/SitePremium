@@ -7,13 +7,19 @@ import { FaBars, FaToggleOn } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
 type NavbarProps = {
-  toggle?: () => void;
+  // toggle?: () => void;
 };
 
-const NavBar: React.FC<NavbarProps> = ({ toggle }) => {
+const NavBar: React.FC<NavbarProps> = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <NavBarStyle>
+        <MenuMobile isOpen={isOpen} toggle={toggle} />
         <Left>
           <img
             src="logo.svg"
@@ -23,7 +29,6 @@ const NavBar: React.FC<NavbarProps> = ({ toggle }) => {
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
-        {/* {isOpen ? <MenuMobile onClick={toggle} /> : <></>} */}
         <Right>
           <ul>
             <Link href="/">
@@ -38,7 +43,7 @@ const NavBar: React.FC<NavbarProps> = ({ toggle }) => {
             <Link href="#">
               <li>Equipe</li>
             </Link>
-            <Link href="#">
+            <Link href="ourproject">
               <li>Projetos</li>
             </Link>
             <Link href="contact">

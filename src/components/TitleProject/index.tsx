@@ -18,7 +18,7 @@ const TitleProject: React.FC<TitleProps> = ({title, subtitle, imagem}) => {
         <Right>
           <h2>{subtitle}</h2>
           <h1>{title}</h1>
-          <img src={imagem}/>
+          <img src={imagem} alt="Linha na cor amarela" />
         </Right>
       </ContainerOur>
     </>

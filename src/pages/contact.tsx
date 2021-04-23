@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactTemplate from '../components/Templates/Contact'
+import ContactTemplate from '../Templates/Contact'
 
 
 export default function contact() {
