@@ -55,6 +55,7 @@ export default function SobreTemplate() {
           image="projects 1.png"
         />
       </section>
+      
       <footer>
         <Footer />
       </footer>

@@ -21,12 +21,11 @@ export const SubTitulo = styled.p`
   font-weight: 400;
   font-family: "Inter";
   color: rgba(223, 223, 223, 1);
-  padding: 20px 0 0 0;
+  padding: 0 20px;
   line-height: 24px;
 
   @media screen and (max-width: 426px) {
     font-size: 16px;
     text-align: justify;
-    padding: 20px 20px 0px 20px;
   }
 `;

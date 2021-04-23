@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1160px) {
     display: none;
   }
 
@@ -212,7 +212,7 @@ export const FooterMobile = styled.footer`
   display: none;
   margin-top: 20px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1160px) {
     display: flex;
     flex-direction: column;
     width: 100%;

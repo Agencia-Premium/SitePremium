@@ -29,7 +29,6 @@ const NavBar: React.FC<NavbarProps> = () => {
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
-        {/* {isOpen ? <MenuMobile onClick={toggle} /> : <></>} */}
         <Right>
           <ul>
             <Link href="/">

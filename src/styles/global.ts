@@ -17,6 +17,15 @@ const GlobalStyle = createGlobalStyle`
         background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
     }
 
+    .gallery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 1080px;
+        margin: 0 auto;
+    }
+    
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,

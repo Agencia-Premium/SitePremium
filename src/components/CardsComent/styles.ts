@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: flex-start;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1160px) {
         justify-content: center;
     }
   }
@@ -47,7 +47,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: flex-end;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1160px) {
         justify-content: center;
     }
   }
@@ -66,6 +66,11 @@ export const Card = styled.div<WrapperProps>`
   display: flex;
   position: relative;
 
+  @media screen and (max-width: 1160px) {
+    width: 560px;
+    height: 120px;
+  }
+
   @media screen and (max-width: 768px) {
     width: 560px;
     height: 120px;
@@ -76,7 +81,7 @@ export const Card = styled.div<WrapperProps>`
     top: -30px;
     left: -30px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1160px) {
       top: -24px;
       left: -24px;
       width: 40px;
@@ -89,7 +94,7 @@ export const Card = styled.div<WrapperProps>`
     bottom: -30px;
     right: -30px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1160px) {
       bottom: -24px;
       right: -24px;
       width: 40px;
@@ -103,7 +108,6 @@ export const Card = styled.div<WrapperProps>`
   div.container-right {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     padding: 0 32px 0 20px;
 
@@ -113,7 +117,7 @@ export const Card = styled.div<WrapperProps>`
       font-family: "Inter";
       color: #dfdfdf;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1160px) {
         font-size: 20px;
       }
     }
@@ -128,7 +132,7 @@ export const Card = styled.div<WrapperProps>`
       padding-top: 16px;
       text-align: justify;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1160px) {
         font-size: 12px;
         padding-top: 10px;
       }
@@ -141,7 +145,7 @@ export const Card = styled.div<WrapperProps>`
     justify-content: center;
     padding-left: 26px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1160px) {
       /* img {
             width: 100%;
             height: 100%;

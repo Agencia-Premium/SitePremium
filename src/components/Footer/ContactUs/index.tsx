@@ -26,7 +26,6 @@ const Footer: React.FC = () => {
         <div className="container-footer">
           <div className="content">
             <div className="box-menu">
-              <div className="circle-one" />
               <img src="logo.svg" alt="logo premium na cor dourada com os textos na cor branca" />
               <div className="content-menu">
                 <h1>Menu</h1>

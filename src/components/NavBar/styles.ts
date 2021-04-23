@@ -56,6 +56,10 @@ export const Right = styled.div`
       :hover {
         color: ${darken(0.12, "rgba(241,241,241,1)")};
       }
+
+      @media screen and (max-width: 920px) {
+        font-size: 1.6rem;
+      }
     }
 
     @media screen and (max-width: 768px) {
