@@ -34,6 +34,11 @@ const GlobalStyle = createGlobalStyle`
         margin: auto;
     }
 
+    .gallery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
