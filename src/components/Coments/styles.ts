@@ -13,6 +13,7 @@ export const LineBotton = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 0 57px 0;
 `;
 export const SubTitulo = styled.p`
   font-size: 1.8rem;
