@@ -38,6 +38,9 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+        width: 1080px;
+        margin: 0 auto;
     }
 
     html, body, div, span, applet, object, iframe,
