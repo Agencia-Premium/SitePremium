@@ -3,19 +3,20 @@ import React from 'react';
 import { ContainerGallery } from './styles';
 
 type ProjectProps = {
-    imagem?: string;
-    titulo?: string;
+    imagem: string;
+    titulo: string;
     subTitulo?: string;
     arrow?: string;
+    alt?: string;
 }
 
-const ImageProject: React.FC<ProjectProps> = ({imagem, titulo, subTitulo, arrow }) => {
+const ImageProject: React.FC<ProjectProps> = ({imagem, titulo, subTitulo, arrow, alt }) => {
     return(
         <>
             <ContainerGallery>
                 <div className="quadro">
                     <div className="imagem">
-                        <img src={imagem} alt="" />
+                        <img src={imagem} alt={alt} />
                     </div>
                     <div className="blur" />
                     <h2>{titulo}</h2>

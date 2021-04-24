@@ -20,12 +20,16 @@ export const ContainerGallery = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
     .imagem {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        
+        img {
+            border-radius: 8px;
+        }
     }
 
     h2 {
