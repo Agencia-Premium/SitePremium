@@ -130,13 +130,13 @@ const ContactTemplate: React.FC = () => {
             )}
             {progress === 2 && (
               <S.WrapperIcon>
-                <img src="congratulations.svg" className="congratulations" alt="cone colorido com uma mensagem de sucesso" />
+                <img src="congratulations.webp" className="congratulations" alt="cone colorido com uma mensagem de sucesso" />
                 <span className="success">Sucesso!!</span>
               </S.WrapperIcon>
             )}
             {progress === 3 && (
               <S.WrapperIcon>
-                <img src="error.svg" alt="imagem escrito error na cor vermelha" />
+                <img src="error.webp" alt="imagem escrito error na cor vermelha" />
               </S.WrapperIcon>
             )}
           </div>
