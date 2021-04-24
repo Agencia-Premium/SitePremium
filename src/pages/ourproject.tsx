@@ -6,8 +6,6 @@ import TitleProject from '../components/TitleProject';
 import Coments from '../components/Coments';
 import { Card } from '../components/ImageProject/constants';
 import ImageProject from '../components/ImageProject';
-// import ImageProject from '../components/ImagemProjeto';
-// import { Card } from '../components/ImagemProjeto/constants';
 
 export default function ourproject() {
   return(
