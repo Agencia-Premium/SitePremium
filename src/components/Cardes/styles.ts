@@ -36,7 +36,7 @@ export const Cards = styled.div`
 
         @media screen and (max-width: 426px) {
             font-size: 2.6rem;
-            padding: 0;
+            padding: 16px 0;
         }
         
     }
