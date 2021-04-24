@@ -37,7 +37,7 @@ export const Right = styled.div`
     @media screen and (max-width: 768px){
       font-size: 2.4rem;
       text-align: center;
-      padding-bottom: 0px;
+      padding: 20px 0;
     }
   }
   p {
@@ -52,7 +52,7 @@ export const Right = styled.div`
       font-size: 1.6rem;
       text-align: center;
       line-height: 24px;
-      padding-bottom: 2px;
+      padding: 0 20px 20px 20px;
     }
   }
 `;

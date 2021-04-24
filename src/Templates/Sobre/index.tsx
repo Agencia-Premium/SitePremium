@@ -39,7 +39,7 @@ export default function SobreTemplate() {
       </main>
       <section className="history">
         <Coments
-          name="Conheça nosso História"
+          name="Conheça nossa História"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum"
         />
       </section>

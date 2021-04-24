@@ -10,7 +10,7 @@ export const Wrapper = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 920px) {
     flex-direction: column;
   }
 `;
@@ -21,15 +21,16 @@ export const ContainerTrofeu = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 920px) {
       justify-content: center;
   }
 
   img {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 920px) {
       opacity: 0.3;
-      width: 300px;
-      height: 398px;
+      max-width: 100%;
+      /* width: 300px;
+      height: 398px; */
     }
   }
 `;
@@ -49,9 +50,13 @@ export const ContainerText = styled.div`
     font-weight: 500;
     text-align: right;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 920px) {
       font-size: 3.2rem;
       text-align: center;
+    }
+
+    @media screen and (max-width: 426px) {
+      font-size: 2.2rem;
     }
   }
 
@@ -62,15 +67,20 @@ export const ContainerText = styled.div`
     color: #ffffff;
     font-size: 9rem;
     text-align: right;
+    font-family: "Inter";
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 920px) {
       font-size: 5rem;
-      line-height: 10px;
+      line-height: 50px;
       text-align: center;
+    }
+
+    @media screen and (max-width: 426px) {
+      font-size: 3.2rem;
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 920px) {
     width: 100%;
     align-items: center;
     justify-content: center;
