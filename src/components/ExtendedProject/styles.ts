@@ -98,7 +98,7 @@ export const Gallery = styled.div`
   }
 `;
 export const Ourprj = styled.div`
-  width: 1033px;
+  width: 1064px;
   height: 100%;
   display: flex;
   align-items: center;
