@@ -4,8 +4,8 @@ import NavBar from '../components/NavBar'
 import Footer from '../components/Footer';
 import TitleProject from '../components/TitleProject';
 import Coments from '../components/Coments';
-import ImageProject from '../components/ImagemProjeto';
-import { Card } from '../components/ImagemProjeto/constants';
+import { Card } from '../components/ImageProject/constants';
+import ImageProject from '../components/ImageProject';
 
 export default function ourproject() {
   return(

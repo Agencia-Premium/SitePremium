@@ -8,6 +8,7 @@ export const ContainerGallery = styled.div`
     justify-content: center;
     border-radius: 8px;
     color: #ffffff;
+    
 
     .quadro{
         
@@ -47,6 +48,8 @@ export const ContainerGallery = styled.div`
         font-weight: 400;
         font-family: "Inter";
         text-align: justify;
+        overflow: hidden; 
+
     }
     
     .blur {

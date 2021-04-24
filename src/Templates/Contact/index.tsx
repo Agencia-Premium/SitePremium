@@ -124,7 +124,7 @@ const ContactTemplate: React.FC = () => {
             )}
             {progress === 1 && (
               <S.WrapperIcon>
-                <img src="bigaviao.svg" className="aviao" alt="avião na cor amarela" />
+                <img src="aviao.webp" className="aviao" alt="avião na cor amarela" />
                 <span>Enviando...</span>
               </S.WrapperIcon>
             )}

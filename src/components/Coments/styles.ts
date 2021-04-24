@@ -18,12 +18,8 @@ export const LineBotton = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-
-
-=======
   margin: 0 0 57px 0;
->>>>>>> bbad79b9c6aa5e5d59e6aa00d50b0c245a9d801f
+
 `;
 export const SubTitulo = styled.p`
   font-size: 1.8rem;
