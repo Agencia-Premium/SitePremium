@@ -8,7 +8,7 @@ export const ContainerProject = styled.div`
     height:100%; */
   margin: 0 auto;
 
-  .Container {
+  .ContainerProj {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,17 +59,50 @@ export const ContainerProject = styled.div`
   }
 `;
 
-export const Galery = styled.div`
-    
-  .Gallery {
-      width: 100%;
-      height:100%;
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      margin: 0 auto;
+export const Gallery = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
 
+  h2 {
+    display: inline-block;
+    font-size: 3.2rem;
+    padding: 6rem 0 5rem 0;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #dfdfdf;
   }
-  
-  
+
+  .gallery {
+    width: 1032px;
+    height: 329px;
+    gap: 24px;
+
+    img {
+      border-radius: 8px;
+      width: 328px;
+      height: 329px;
+    }
+  }
+
+  h3 {
+    font-size: 3.2rem;
+    padding: 6rem 0 3.2rem 0;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #dfdfdf;
+  }
 `;
+export const Ourprj = styled.div`
+  width: 1033px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  padding: 0 auto;
+`
