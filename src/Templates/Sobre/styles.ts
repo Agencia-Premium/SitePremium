@@ -6,7 +6,7 @@ export const Wrapper = styled.section`
     width: 1064px;
     margin: auto;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1076px) {
       width: 100%;
       flex-direction: column;
       justify-content: center;

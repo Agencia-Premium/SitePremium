@@ -7,7 +7,7 @@ export const ContainerSobre = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1076px) {
         margin-bottom: 20px;
     }
 `
