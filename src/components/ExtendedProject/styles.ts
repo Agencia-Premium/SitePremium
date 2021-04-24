@@ -36,12 +36,13 @@ export const ContainerProject = styled.div`
     }
     .Right {
       width: 504px;
-      /* height: 336px; */
       display: flex;
       flex-direction: column;
 
-      /* align-items: center; */
-      /* justify-content: center; */
+      img {
+        border-radius: 8px;
+      }
+      
     }
 
     .Left {
@@ -51,9 +52,9 @@ export const ContainerProject = styled.div`
       top: 21px;
 
       .imagem {
-        /* width:40%; */
         width: 504px;
         height: 351px;
+        border-radius: 8px;
       }
     }
   }
