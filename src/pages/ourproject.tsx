@@ -17,6 +17,11 @@ export interface I_ProjectType {
     url: string;
     name: string;
   };
+  gallery?: {
+    name: string;
+    url: string;
+  }[]
+  href: string;
 }
 
 export default function ourproject({ projects }) {
@@ -40,6 +45,7 @@ export default function ourproject({ projects }) {
                 name: project.image.name,
                 url: project.image.url,
               },
+              href: project.id
             };
 
             return object;
@@ -91,6 +97,7 @@ export default function ourproject({ projects }) {
                   title={item.title}
                   short_description={item.short_description}
                   description={item.description}
+                  href={item.id}
                 />
               );
             })}

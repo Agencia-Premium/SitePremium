@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import { I_ProjectType } from "../../pages/ourproject";
 
@@ -11,7 +12,8 @@ const ImageProject: React.FC<ComponentProps> = ({
   image,
   title,
   short_description,
-  description
+  description,
+  href
 }) => {
   return (
     <>
@@ -23,7 +25,11 @@ const ImageProject: React.FC<ComponentProps> = ({
           <div className="blur" />
           <h2>{title}</h2>
           <p>{short_description}</p>
-          <img className="arrow" src="arrow.svg" alt="seta" />
+          <Link href={`projects/${href}`}>
+            <button>
+              <img className="arrow" src="arrow.svg" alt="seta" />
+            </button>
+          </Link>
         </div>
       </ContainerGallery>
     </>

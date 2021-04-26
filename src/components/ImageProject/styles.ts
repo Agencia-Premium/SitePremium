@@ -61,10 +61,16 @@ export const ContainerGallery = styled.div`
     clip-path: polygon(0% 100%, 100% 100%, 100% 39%, -12% 0%);
   }
 
-  .arrow {
+  button {
     position: absolute;
     top: 325px;
     left: 261px;
     cursor: pointer;
+    background: transparent;
+    border: 0;
+
+  }
+
+  .arrow {
   }
 `;

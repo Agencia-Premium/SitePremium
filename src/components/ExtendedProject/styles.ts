@@ -6,7 +6,7 @@ export const ContainerProject = styled.div`
   justify-content: center;
   /* width:100%;
     height:100%; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
 
   .ContainerProj {
     display: flex;
@@ -14,7 +14,7 @@ export const ContainerProject = styled.div`
     justify-content: center;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     position: relative;
     h2 {
       font-size: 4.6rem;
@@ -32,10 +32,11 @@ export const ContainerProject = styled.div`
       text-align: justify;
       line-height: 2.4rem;
       color: #cccccc;
-      margin: 15px 24px 0 0;
+      /* margin: 15px 24px 0 0; */
+      padding: 0px 0px 0px 0px;
     }
     .Right {
-      width: 504px;
+      width: 50%;
       display: flex;
       flex-direction: column;
 
@@ -78,9 +79,7 @@ export const Gallery = styled.div`
   }
 
   .gallery {
-    width: 1032px;
-    height: 329px;
-    gap: 24px;
+    gap: 24px; 
 
     img {
       border-radius: 8px;
