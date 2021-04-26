@@ -117,8 +117,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     `/projects?_limit=3&_sort=id:DESC`
   );
 
-  console.log(mainProject, othersProjects);
-
   return {
     props: { mainProject, othersProjects },
   };
