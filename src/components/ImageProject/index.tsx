@@ -1,31 +1,33 @@
-import React from 'react';
+import React from "react";
+import Image from "next/image";
 
-import { ContainerGallery } from './styles';
+import { I_ProjectType } from "../../pages/ourproject";
 
-type ProjectProps = {
-    imagem: string;
-    titulo: string;
-    subTitulo?: string;
-    arrow?: string;
-    alt?: string;
-}
+import { ContainerGallery } from "./styles";
 
-const ImageProject: React.FC<ProjectProps> = ({imagem, titulo, subTitulo, arrow, alt }) => {
-    return(
-        <>
-            <ContainerGallery>
-                <div className="quadro">
-                    <div className="imagem">
-                        <img src={imagem} alt={alt} />
-                    </div>
-                    <div className="blur" />
-                    <h2>{titulo}</h2>
-                    <p>{subTitulo}</p>
-                    <img className="arrow"src={arrow} alt="seta" />
-                </div>
-                
-            </ContainerGallery>
-        </>
-    )
-}
+interface ComponentProps extends I_ProjectType {}
+
+const ImageProject: React.FC<ComponentProps> = ({
+  id,
+  title,
+  short_description,
+  description,
+  image,
+}) => {
+  return (
+    <>
+      <ContainerGallery>
+        <div className="quadro">
+          <div className="imagem">
+            <img src={`http://localhost:1337${image.url}`} alt={image.name} />
+          </div>
+          <div className="blur" />
+          <h2>{title}</h2>
+          <p>{short_description}</p>
+          <img className="arrow" src="arrow.svg" alt="seta" />
+        </div>
+      </ContainerGallery>
+    </>
+  );
+};
 export default ImageProject;

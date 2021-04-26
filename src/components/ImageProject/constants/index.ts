@@ -2,7 +2,7 @@ export const Card = [
     {
         imagem: "ceu.png",
         titulo:"Design",
-        subTitulo:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        subTitulo:"Lorem ipsum dolor sit amet, consectetur.",
     }, 
     {
         imagem: "predio.svg",
@@ -33,7 +33,7 @@ export const Card = [
     {
         imagem: "ceu.png",
         titulo:"Design",
-        subTitulo:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        subTitulo:"Lorem ipsum dolor sit amet, consectetur.",
     },
 
 

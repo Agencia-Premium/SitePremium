@@ -1,44 +1,96 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const appearFromLeft = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(-90px) translateY(90px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(50px) translateY(0px);
+  }
+  40% {
+    transform: rotate(-8deg);
+  }
+  
+`;
+
+
+const appearFromRight = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50px);
+  }
+`;
 
 export const ContainerOur = styled.div`
-  width: 940px;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Inter";
   font-weight: 700;
   color: #dfdfdf;
-  position: relative;
-  padding: 30px 0 50px 0;
-  
+
+  @media screen and (max-width: 880px) {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
 `;
 export const Left = styled.div`
-  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   img {
-    width: 120%;
+    animation: ${appearFromLeft} 6s;
+
+    @media screen and (max-width: 780px) {
+      width: 80%;
+    }
   }
 `;
+
 export const Right = styled.div`
-  width: 50%;
+  height: 100%;
   justify-content: center;
   align-items: center;
-  position: relative;
-  left: -2%;
+
+  animation: ${appearFromRight} 4s;
 
   h2 {
     font-size: 4.6rem;
+
+    @media screen and (max-width: 1020px) {
+      font-size: 3.2rem;
+    }
+
+    @media screen and (max-width: 426px) {
+      font-size: 2.2rem;
+    }
   }
 
   h1 {
     font-size: 8.4rem;
+
+    @media screen and (max-width: 1020px) {
+      font-size: 6rem;
+    }
+
+    @media screen and (max-width: 426px) {
+      font-size: 4rem;
+    }
   }
 
   img {
-    width: 331px;
+    @media screen and (max-width: 1020px) {
+      width: 220px;
+    }
   }
 `;
