@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 import { I_ProjectType } from "../../pages/ourproject";
 
@@ -9,10 +8,10 @@ interface ComponentProps extends I_ProjectType {}
 
 const ImageProject: React.FC<ComponentProps> = ({
   id,
+  image,
   title,
   short_description,
-  description,
-  image,
+  description
 }) => {
   return (
     <>
