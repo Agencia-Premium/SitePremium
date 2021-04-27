@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 import GlobalStyle from '../styles/global';
 import { Card } from '../components/ImageProject/constants';
-import ExtendedProject from '../components/ExtendedProject';
+// import {  } from '../components/ExtendedProject';
 
 
 export default function extendedproject() {
@@ -21,9 +21,9 @@ export default function extendedproject() {
 
             <main>
                 <div className="container">
-                    {Card.map((item, index)=>{
+                    {/* {Card.map((item, index)=>{
                         return <ExtendedProject key={index} imagem={item.imagem} titulo={item.titulo} subTitulo={item.subTitulo} />
-                    })}
+                    })} */}
 
                 </div>
             </main>
