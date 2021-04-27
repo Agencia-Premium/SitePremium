@@ -111,7 +111,7 @@ const ContactTemplate: React.FC = () => {
                   value={message}
                   borderColor={error && true}
                 />
-                <Button
+                <Button 
                   background="yellow"
                   scale="medium"
                   onClick={ValidateForm}
