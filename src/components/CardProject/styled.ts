@@ -7,6 +7,9 @@ export const ContainerProject = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  button {
+    font-family:"Ubuntu";
+  }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -18,7 +21,7 @@ export const Right = styled.div`
     width: 50%;
     align-items: center;
     justify-content: center;
-    font-family: "Inter";
+    font-family: "Ubuntu";
     position: relative;    
 
   @media screen and (max-width: 768px) {

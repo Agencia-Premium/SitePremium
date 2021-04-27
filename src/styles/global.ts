@@ -48,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
             font-size: 3.2rem;
             padding: 10rem 0 3.2rem 0;
             text-align: center;
-            font-family: "Inter";
+            font-family: "Ubuntu";
             font-weight: 700;
             color: #dfdfdf;
         }

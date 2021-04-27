@@ -46,7 +46,7 @@ export const ContainerText = styled.div`
     width: 50%;
     font-size: 4.3rem;
     color: #ffffff;
-    font-family: "Inter";
+    font-family: "Ubuntu";
     font-weight: 500;
     text-align: right;
 
@@ -67,7 +67,7 @@ export const ContainerText = styled.div`
     color: #ffffff;
     font-size: 9rem;
     text-align: right;
-    font-family: "Inter";
+    font-family: "Ubuntu";
 
     @media screen and (max-width: 920px) {
       font-size: 5rem;

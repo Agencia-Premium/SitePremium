@@ -10,7 +10,7 @@ const WrapperModifiers = {
     height: 42px;
     font-size: 16px;
     font-weight: bold;
-    font-family: "Inter";
+    font-family: "Ubuntu";
     margin-top: 10px;
   `,
 
@@ -42,7 +42,7 @@ const WrapperModifiers = {
     height: 48px;
     font-size: 16px;
     font-weight: bold;
-    font-family: "Inter";
+    font-family: "Ubuntu";
 
     @media screen and (max-width: 426px) {
       width: 300px;

@@ -114,7 +114,7 @@ export const Card = styled.div<WrapperProps>`
     h2 {
       font-size: 32px;
       font-weight: 700;
-      font-family: "Inter";
+      font-family: "Ubuntu";
       color: #dfdfdf;
 
       @media screen and (max-width: 1160px) {
@@ -125,7 +125,7 @@ export const Card = styled.div<WrapperProps>`
     p {
       font-size: 18px;
       font-weight: 400;
-      font-family: "Inter";
+      font-family: "Ubuntu";
       line-height: 22px;
       color: #a1a1a1;
 

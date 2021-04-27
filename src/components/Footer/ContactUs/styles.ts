@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   div.contato {
     width: 700px;
     height: 380px;
-    background-image: url("/cardnoAll4x.webp");
+    background-image: url("/cardNoAll4x.webp");
     display: flex;
     /* flex-direction: column; */
     background-size: cover;
@@ -41,7 +41,7 @@ export const Wrapper = styled.div`
       font-size: 28px;
       font-weight: 700;
       color: #333;
-      font-family: "Inter";
+      font-family: "Ubuntu";
     }
 
     .left p {
@@ -50,7 +50,7 @@ export const Wrapper = styled.div`
       font-weight: 400;
       line-height: 26px;
       color: #333;
-      font-family: "Inter";
+      font-family: "Ubuntu";
     }
 
     .right {
@@ -103,7 +103,7 @@ export const Wrapper = styled.div`
       font-size: 20px;
       font-weight: 700;
       color: #fff;
-      font-family: "Inter";
+      font-family: "Ubuntu";
       padding-bottom: 12px;
     }
 
@@ -111,7 +111,7 @@ export const Wrapper = styled.div`
       font-size: 16px;
       color: #fff;
       font-weight: 400;
-      font-family: "Inter";
+      font-family: "Ubuntu";
       padding-bottom: 10px;
       cursor: pointer;
     }
@@ -124,7 +124,7 @@ export const Wrapper = styled.div`
       font-size: 16px;
       color: #fff;
       font-weight: 400;
-      font-family: "Inter";
+      font-family: "Ubuntu";
       padding-bottom: 10px;
       cursor: pointer;
     }
@@ -143,7 +143,7 @@ export const Wrapper = styled.div`
       font-size: 20px;
       font-weight: 700;
       color: #fff;
-      font-family: "Inter";
+      font-family: "Ubuntu";
       padding-bottom: 12px;
     }
   }
@@ -179,7 +179,7 @@ export const Wrapper = styled.div`
       font-size: 16px;
       color: #fff;
       font-weight: 500;
-      font-family: "Inter";
+      font-family: "Ubuntu";
       padding-top: 22px;
     }
 
@@ -226,7 +226,7 @@ export const FooterMobile = styled.footer`
       font-size: 16px;
       font-weight: 500;
       color: #fff;
-      font-family: "Inter"
+      font-family: "Ubuntu"
     }
   }
 

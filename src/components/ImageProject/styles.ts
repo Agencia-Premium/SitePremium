@@ -34,7 +34,7 @@ export const ContainerGallery = styled.div`
     left: 19px;
     font-size: 3.2rem;
     font-weight: 700;
-    font-family: "Inter";
+    font-family: "Ubuntu";
   }
 
   p {
@@ -45,7 +45,7 @@ export const ContainerGallery = styled.div`
     height: 63px;
     font-size: 1.4rem;
     font-weight: 400;
-    font-family: "Inter";
+    font-family: "Ubuntu";
     text-align: justify;
     overflow: hidden;
   }

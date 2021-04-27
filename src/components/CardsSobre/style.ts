@@ -50,7 +50,7 @@ export const Right = styled.div`
         font-weight: 700;
         color: #efefef;
         margin-bottom: 8px;
-        font-family:"Inter";
+        font-family:"Ubuntu";
 
         @media screen and (max-width: 768px) {
             font-size: 1.8rem;
@@ -60,7 +60,7 @@ export const Right = styled.div`
     p {
         font-size: 1.6rem;
         font-weight: 400;
-        font-family: "Inter";
+        font-family: "Ubuntu";
         line-height: 2rem;
         color: #acacac;
         margin: 0 0 0 0;

@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
+  
   .CardsSobre {
     display: flex;
     width: 1064px;
     margin: auto;
+    
 
     @media screen and (max-width: 1076px) {
       width: 100%;

@@ -4,6 +4,9 @@ import { InputProps } from "./index";
 type BorderProps = Pick<InputProps, 'borderColor'>
 
 const WrapperModifiers = {
+
+  
+
   gray: () => css`
     background: #333;
     color: #ccc;

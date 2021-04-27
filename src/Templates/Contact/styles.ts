@@ -38,7 +38,13 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 
+    input {
+      font-family: "Ubuntu";
+    }
+
+   
     .container-error {
       height: 40px;
       display: flex;
@@ -53,7 +59,7 @@ export const Wrapper = styled.div`
       span {
         font-size: 16px;
         color: #fefe;
-        font-family: "Inter";
+        font-family: "Ubuntu";
         font-weight: 700;
       }
     }
@@ -77,7 +83,7 @@ export const WrapperIcon = styled.div`
     font-size: 24px;
     font-weight: 700;
     color: #fefe;
-    font-family: "Inter";
+    font-family: "Ubuntu";
   }
 
   .success {

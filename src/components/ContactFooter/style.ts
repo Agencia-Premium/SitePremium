@@ -9,10 +9,11 @@ export const ContainerContact = styled.div`
   font-size: 18px;
   text-align: center;
   font-weight: 700;
-  font-family: "Inter";
+  font-family: "Ubuntu";
   color: rgba(223, 223, 223, 1);
   padding-top: 90px;
   padding-bottom: 40px;
+ 
 
   @media screen and (max-width: 768px) {
     display: none;

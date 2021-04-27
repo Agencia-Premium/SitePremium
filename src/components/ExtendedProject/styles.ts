@@ -17,6 +17,7 @@ export const ContainerProject = styled.div`
     justify-content: center;
     width: 100%;
     height: 100%;
+    font-family:"Ubuntu";
 
     @media screen and (max-width: 1120px) {
       flex-direction: column;
@@ -25,7 +26,7 @@ export const ContainerProject = styled.div`
     h1 {
       font-size: 4.6rem;
       font-weight: 700;
-      font-family: "Inter";
+      font-family: "Ubuntu";
       line-height: 6rem;
       color: #dfdfdf;
       padding-bottom: 14px;
@@ -40,7 +41,7 @@ export const ContainerProject = styled.div`
       justify-content: center;
       font-size: 2.2rem;
       font-weight: 400;
-      font-family: "Inter";
+      font-family: "Ubuntu";
       text-align: justify;
       line-height: 2.4rem;
       color: #cccccc;
@@ -94,7 +95,7 @@ export const Gallery = styled.div`
   h2 {
     font-size: 3.2rem;
     padding: 10rem 0 5rem 0;
-    font-family: "Inter";
+    font-family: "Ubuntu";
     font-weight: 700;
     color: #dfdfdf;
     text-align: center;

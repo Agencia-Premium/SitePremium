@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
   h1 {
     font-size: 20px;
     font-weight: 700;
-    font-family: "Inter";
+    font-family: "Ubuntu";
     color: #dfdfdf;
 
     padding-top: 16px;
@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
   h5 {
     font-size: 16px;
     font-weight: 500;
-    font-family: "Inter";
+    font-family: "Ubuntu";
     color: #dfdfdf;
 
     padding-top: 12px;
@@ -45,7 +45,7 @@ export const Wrapper = styled.div`
   p {
     font-size: 16px;
     font-weight: 400;
-    font-family: "Inter";
+    font-family: "Ubuntu";
     color: #a1a1a1;
     padding: 10px 28px;
     line-height: 26px;

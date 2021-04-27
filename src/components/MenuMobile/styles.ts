@@ -48,7 +48,7 @@ export const Menu = styled.ul`
     text-decoration: none !important;
     color: rgba(241, 241, 241, 1);
     font-weight: 700;
-    font-family: "Inter";
+    font-family: "Ubuntu";
     cursor: pointer;
     :hover {
       color: ${darken(0.2, "rgba(241, 241, 241, 1)")};
