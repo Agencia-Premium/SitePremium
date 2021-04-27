@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
 
     html, body {
         background: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
+        font-family: 'Ubuntu'
     }
 
     .gallery {

@@ -48,7 +48,7 @@ export const Right = styled.div`
       font-size: 2.2rem;
       font-weight: bold;
       color: rgba(241, 241, 241, 1);
-      font-family: "Inter";
+      font-family: "Ubuntu";
       cursor: pointer;
       padding: 0 24px 0 0;
       transition: all 0.2s ease-in-out;

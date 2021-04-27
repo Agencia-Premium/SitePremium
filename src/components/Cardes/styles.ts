@@ -30,7 +30,7 @@ export const Cards = styled.div`
         font-size: 3rem;
         font-weight: 700;
         color: rgba(223,223,223,1);
-        font-family:"Inter";
+        font-family:"Ubuntu";
         padding: 16px 0;
         text-align: center;
 
@@ -45,7 +45,7 @@ export const Cards = styled.div`
         font-size: 1.8rem;
         font-weight: 400;
         color: rgba(161,161,161,1);
-        font-family: "Inter";
+        font-family: "Ubuntu";
         line-height: 22px;
         padding: 2px 20px;
         text-align: center;

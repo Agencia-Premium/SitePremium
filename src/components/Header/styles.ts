@@ -87,12 +87,28 @@ export const Left = styled.div`
       text-align: center;
       padding-top: 20px;
     }
+
+    > img {
+      margin-right: 15px;
+
+      @media screen and (max-width: 768px) {
+        width: 46px;
+        height: 60px;
+        margin-right: 10px;
+      }
+
+      @media screen and (max-width: 426px) {
+        width: 30px;
+        height: 40px;
+        margin-right: 5px;
+      }
+    }
   }
   p {
     font-size: 2.6rem;
     font-weight: 400;
     color: rgba(241, 241, 241, 1);
-    /* font-family: "Ubuntu"; */
+    font-family: "Ubuntu";
     line-height: 36px;
 
     @media screen and (max-width: 920px) {
@@ -109,6 +125,7 @@ export const Left = styled.div`
     @media screen and (max-width: 426px) {
       font-size: 1.6rem;
       line-height: 22px;
+      padding-top: 10px;
     }
   }
 `;
