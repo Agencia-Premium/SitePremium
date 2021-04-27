@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   div.contato {
     width: 700px;
     height: 380px;
-    background-image: url("/cardnoAll4x.webp");
+    background-image: url("./cardNoAll4x.webp");
     display: flex;
     /* flex-direction: column; */
     background-size: cover;
