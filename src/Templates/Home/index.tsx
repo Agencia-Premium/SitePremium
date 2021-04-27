@@ -10,6 +10,7 @@ import ColaborattorSlider from "../../components/CollaboratorSlider";
 import { Comments } from "../../components/CardsComent/constants";
 import Parceiros from "../../components/Parceiros";
 import { Container } from "../../components/Container";
+import Work from "../../components/Work";
 
 import * as S from "./styles";
 
@@ -75,12 +76,10 @@ export default function HomeTemplate() {
         </section>
       </Container>
 
-      <Container>
-        <section className="collaborators" id="vagas">
-          <Title name="Nossas Vagas" image="line_botton.svg" />
-          <ColaborattorSlider />
-        </section>
-      </Container>
+      <section className="works" id="vagas">
+        <Work />
+      </section>
+
       <footer>
         <Footer />
       </footer>
