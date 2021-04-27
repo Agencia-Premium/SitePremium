@@ -5,10 +5,7 @@ export const Wrapper = styled.div`
   height: 100%;
 
   margin: 40px auto;
-
-  > img {
-    margin-right: 20px;
-  }
+    gap: 20px;
 
   display: flex;
   align-items: center;

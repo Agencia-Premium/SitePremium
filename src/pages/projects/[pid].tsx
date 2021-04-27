@@ -39,11 +39,11 @@ export default function project({ mainProject, othersProjects }: Projects) {
       </nav>
 
       <main>
-        <ContainerProject>
-          <Container>
+        <Container>
+          <ContainerProject>
             <div className="ContainerProj">
               <div className="Right">
-                <h2>{mainProject.title}</h2>
+                <h1>{mainProject.title}</h1>
                 <p>{mainProject.description}</p>
               </div>
               <div className="Left">
@@ -53,14 +53,14 @@ export default function project({ mainProject, othersProjects }: Projects) {
                 />
               </div>
             </div>
-          </Container>
-        </ContainerProject>
+          </ContainerProject>
+        </Container>
       </main>
-      <section className="Gallery">
+      <section className="Gallery-project">
         <Gallery>
-          <h2>Galeria</h2>
           <Container>
-            <div className="gallery">
+            <h2>Galeria</h2>
+            <div className="gallery-project">
               {mainProject.gallery.map((item, index) => (
                 <figure>
                   <img
@@ -72,12 +72,12 @@ export default function project({ mainProject, othersProjects }: Projects) {
               ))}
             </div>
           </Container>
-
-          <h3>Veja outros projetos</h3>
         </Gallery>
       </section>
+
       <section className="secGalleryproject">
         <Container>
+          <h3>Veja outros projetos</h3>
           <Ourprj>
             {othersProjects.map((item, index) => {
               return (
@@ -92,6 +92,7 @@ export default function project({ mainProject, othersProjects }: Projects) {
                 />
               );
             })}
+          
           </Ourprj>
         </Container>
       </section>

@@ -27,7 +27,7 @@ const ImageProject: React.FC<ComponentProps> = ({
           <p>{short_description}</p>
           <Link href={`projects/${href}`}>
             <button>
-              <img className="arrow" src="arrow.svg" alt="seta" />
+              <img className="arrow" src="/arrow.svg" alt="seta" />
             </button>
           </Link>
         </div>

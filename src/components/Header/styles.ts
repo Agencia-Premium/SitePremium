@@ -66,7 +66,7 @@ export const Left = styled.div`
     font-size: 8.6rem;
     font-weight: 700;
     color: rgba(241, 241, 241, 1);
-    font-family: "Inter";
+    font-family: "Ubuntu";
     line-height: 92px;
     padding: 0 0 14px 0;
 
@@ -92,7 +92,7 @@ export const Left = styled.div`
     font-size: 2.6rem;
     font-weight: 400;
     color: rgba(241, 241, 241, 1);
-    font-family: "Inter";
+    /* font-family: "Ubuntu"; */
     line-height: 36px;
 
     @media screen and (max-width: 920px) {

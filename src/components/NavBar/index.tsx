@@ -22,7 +22,7 @@ const NavBar: React.FC<NavbarProps> = () => {
         <MenuMobile isOpen={isOpen} toggle={toggle} />
         <Left>
           <img
-            src="logo.svg"
+            src="/logo.svg"
             alt="Logo na cor amarela, escrito prêmium agência digital."
           />
         </Left>
@@ -34,14 +34,14 @@ const NavBar: React.FC<NavbarProps> = () => {
             <Link href="/">
               <li>Início</li>
             </Link>
-            <Link href="#">
+            <Link href="#services">
               <li>Serviços</li>
             </Link>
             <Link href="sobre">
               <li>Sobre nós</li>
             </Link>
-            <Link href="#">
-              <li>Equipe</li>
+            <Link href="#vagas">
+              <li>Vagas</li>
             </Link>
             <Link href="ourproject">
               <li>Projetos</li>

@@ -24,13 +24,33 @@ const GlobalStyle = createGlobalStyle`
         flex-wrap: wrap;
         width: 1080px;
         margin: 0 auto;
+        gap: 24px;
     }
 
-    .secGalleryproject{
+    section.Gallery-project {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 0 30px 0;
+        /* flex-wrap: wrap; */
+        /* width: 1080px; */
+        margin: 0 auto;
+    }
+
+    .secGalleryproject{
+        /* width: 1080px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; */
+
+        h3 {
+            font-size: 3.2rem;
+            padding: 10rem 0 3.2rem 0;
+            text-align: center;
+            font-family: "Inter";
+            font-weight: 700;
+            color: #dfdfdf;
+        }
     }
     
     html, body, div, span, applet, object, iframe,
@@ -47,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
     menu, nav, output, ruby, section, summary,
     time, mark, audio, video {
         background-color: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
-         font-family: "Inter, sans-serif";
+         font-family: "Ubuntu";
         margin: 0;
         padding: 0;
         border: 0;

@@ -12,7 +12,8 @@ export const ContainerGallery = styled.div`
     height: 386px;
     position: relative;
     box-sizing: border-box;
-    margin: 1.2rem;
+    /* margin: 1.2rem; */
+    
     display: flex;
     align-items: center;
     justify-content: center;

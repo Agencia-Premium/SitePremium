@@ -9,26 +9,29 @@ import Footer from "../../components/Footer";
 import ColaborattorSlider from "../../components/CollaboratorSlider";
 import { Comments } from "../../components/CardsComent/constants";
 import Parceiros from "../../components/Parceiros";
+import { Container } from "../../components/Container";
 
 import * as S from "./styles";
 
 export default function HomeTemplate() {
   return (
     <S.Wrapper>
-        <header>
-          <GlobalStyle />
-          <title>Agência Premium</title>
-          <link rel="icon" href="/favicon.ico" />
-        </header>
+      <header>
+        <GlobalStyle />
+        <title>Agência Premium</title>
+        <link rel="icon" href="/favicon.ico" />
+      </header>
 
-        <header>
-          <NavBar />
-        </header>
+      <header>
+        <NavBar />
+      </header>
 
-        <main>
-          <Header />
-        </main>
-        <section>
+      <main>
+        <Header />
+      </main>
+
+      <Container>
+        <section id="services">
           <Title
             name="Nossos Serviços"
             image="line_botton.svg"
@@ -36,7 +39,9 @@ export default function HomeTemplate() {
           />
           <Cardes />
         </section>
+      </Container>
 
+      <Container>
         <section>
           <Title
             name="Nossos Clientes"
@@ -45,6 +50,9 @@ export default function HomeTemplate() {
           />
           <Clients />
         </section>
+      </Container>
+
+      <Container>
         <section className="comment-user">
           {Comments.map((item, index) => {
             return (
@@ -58,20 +66,24 @@ export default function HomeTemplate() {
             );
           })}
         </section>
+      </Container>
 
+      <Container>
         <section>
           <Title name="Nossos Parceiros" image="line_botton.svg" />
           <Parceiros />
         </section>
+      </Container>
 
-        <Title name="Nossos Colaboradores" image="line_botton.svg" />
-        <section className="collaborators">
+      <Container>
+        <section className="collaborators" id="vagas">
+          <Title name="Nossas Vagas" image="line_botton.svg" />
           <ColaborattorSlider />
         </section>
-
-        <footer>
-          <Footer />
-        </footer>
+      </Container>
+      <footer>
+        <Footer />
+      </footer>
     </S.Wrapper>
   );
 }

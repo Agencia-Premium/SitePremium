@@ -71,9 +71,7 @@ const ContactTemplate: React.FC = () => {
 
         <main>
           <TitleForm
-            name="Formulário de Contato"
-            description="Preencha o formulário e nossa equipe estrará 
-                    em contato com você em até 24 horas."
+            name="Entre em contato"
           />
           <div className="conteinerForme">
             {error && (
