@@ -15,36 +15,65 @@ const appearFromAviao = keyframes`
 
 const appearFromCongratulations = keyframes`
     0% {
-        top: 30%;
+      transform: rotateX(20deg) rotateZ(15deg);
+    }
+    40% {
+        transform: rotateX(-20deg) rotateZ(-15deg);
+    }
+    60% {
+      transform: rotateX(25deg) rotateZ(20deg);
     }
     80% {
-        top: 35%;
+      transform: rotateX(-20deg) rotateZ(-15deg);
     }
     100% {
-      top: 30%;
+      transform: rotateX(20deg) rotateZ(15deg);
     }
+    
+`;
+
+const appearError = keyframes`
+  0%   { 
+    opacity: 0;
+    transform: rotateY(20deg);
+   }
+  100% { 
+    opacity: 1;
+    transform: rotateY(-20deg);
+     }
+`;
+
+const appearWrapper = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 `;
 
 export const Wrapper = styled.div`
   max-width: 100%;
   min-height: 100vh;
   background: linear-gradient(111.34deg, #545454 0%, #0b0b0b 100%);
-    position: relative;
+  position: relative;
+
+  animation: ${appearWrapper} 1s;
 
   .conteinerForme {
-    margin-top: 54px;
+    margin-top: 40px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 
     input {
       font-family: "Ubuntu";
     }
 
-   
     .container-error {
       height: 40px;
       display: flex;
@@ -52,7 +81,7 @@ export const Wrapper = styled.div`
       padding: 0 20px;
       align-items: center;
       justify-content: center;
-      background-color: #DC143C;
+      background-color: #dc143c;
 
       margin-bottom: 40px;
 
@@ -87,7 +116,7 @@ export const WrapperIcon = styled.div`
   }
 
   .success {
-    padding-top: 200px;
+    padding-top: 400px;
   }
 
   .aviao {
@@ -97,6 +126,15 @@ export const WrapperIcon = styled.div`
 
   .congratulations {
     position: absolute;
-    animation: ${appearFromCongratulations} 2s infinite;
+    animation: ${appearFromCongratulations} 3s infinite;
+  }
+
+  .error {
+    position: absolute;
+    animation: ${appearError} 2s infinite;
+  }
+
+  .error-text {
+    padding-top: 400px;
   }
 `;

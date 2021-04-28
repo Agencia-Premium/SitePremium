@@ -35,24 +35,24 @@ const ContactTemplate: React.FC = () => {
       message !== ""
     ) {
       try {
-        setProgress(1);
-        api
-          .post("/forms", { name, email, phone, message })
-          .then((result) => {
-            console.log(result.data);
-            setProgress(2);
-          })
-          .catch((err) => {
-            setProgress(3);
-          });
-
-        console.log("Validei");
+        setTimeout(function () {
+          setProgress(1);
+        }, 1000);
+        setTimeout(function () {
+          api
+            .post("/forms", { name, email, phone, message })
+            .then((result) => {
+              setProgress(2);
+            })
+            .catch((err) => {
+              setProgress(3);
+            });
+        }, 5000);
         setError(false);
       } catch (err) {
         setProgress(3);
       }
     } else {
-      console.log("Não validei");
       setError(true);
     }
   };
@@ -70,9 +70,7 @@ const ContactTemplate: React.FC = () => {
         </header>
 
         <main>
-          <TitleForm
-            name="Entre em contato"
-          />
+          <TitleForm name="Entre em contato" />
           <div className="conteinerForme">
             {error && (
               <div className="container-error">
@@ -111,7 +109,7 @@ const ContactTemplate: React.FC = () => {
                   value={message}
                   borderColor={error && true}
                 />
-                <Button 
+                <Button
                   background="yellow"
                   scale="medium"
                   onClick={ValidateForm}
@@ -122,28 +120,40 @@ const ContactTemplate: React.FC = () => {
             )}
             {progress === 1 && (
               <S.WrapperIcon>
-                <img src="aviao.webp" className="aviao" alt="avião na cor amarela" />
+                <img
+                  src="aviao.webp"
+                  className="aviao"
+                  alt="avião na cor amarela"
+                />
                 <span>Enviando...</span>
               </S.WrapperIcon>
             )}
             {progress === 2 && (
               <S.WrapperIcon>
-                <img src="congratulations.webp" className="congratulations" alt="cone colorido com uma mensagem de sucesso" />
-                <span className="success">Sucesso!!</span>
+                <img
+                  src="congratulations.webp"
+                  className="congratulations"
+                  alt="cone colorido com uma mensagem de sucesso"
+                />
+                <span className="success">Mensagem enviada com sucesso!</span>
               </S.WrapperIcon>
             )}
             {progress === 3 && (
               <S.WrapperIcon>
-                <img src="error.webp" alt="imagem escrito error na cor vermelha" />
+                <img
+                  src="error.webp"
+                  className="error"
+                  alt="imagem escrito error na cor vermelha"
+                />
+                <span className="error-text">Erro ao enviar a mensagem 😥</span>
               </S.WrapperIcon>
             )}
           </div>
         </main>
-
-        <footer>
-          <ContactFooter />
-        </footer>
       </S.Wrapper>
+      <footer>
+        <ContactFooter />
+      </footer>
     </>
   );
 };

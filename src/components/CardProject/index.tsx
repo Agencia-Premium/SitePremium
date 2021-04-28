@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import Button from '../Button';
 
 
@@ -20,7 +21,9 @@ const CardProject: React.FC<CardProjectProps> = ({Title, SubTitle, image}) => {
             <Right>
                 <h2>{Title}</h2>
                 <p>{SubTitle}</p>
+                <Link href="ourproject">
                 <Button scale="xsmall" background="yellow" >Ver</Button>
+                </Link>
             </Right>
 
 

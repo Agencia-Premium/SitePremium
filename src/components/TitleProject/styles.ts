@@ -15,15 +15,17 @@ const appearFromLeft = keyframes`
   
 `;
 
-
 const appearFromRight = keyframes`
-  from {
+  0% {
     opacity: 0;
     transform: translateX(50px);
   }
-  to {
+  60% {
     opacity: 1;
     transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 `;
 
@@ -61,7 +63,6 @@ export const Right = styled.div`
   height: 100%;
   justify-content: center;
   align-items: center;
-
   animation: ${appearFromRight} 4s;
 
   h2 {

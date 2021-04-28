@@ -6,15 +6,16 @@ import Cardes from "../../components/Cardes";
 import Clients from "../../components/Clients";
 import CardsComponent from "../../components/CardsComent";
 import Footer from "../../components/Footer";
-import ColaborattorSlider from "../../components/CollaboratorSlider";
+import ColaborattorSlider from "../../components/WorkSlider";
 import { Comments } from "../../components/CardsComent/constants";
 import Parceiros from "../../components/Parceiros";
 import { Container } from "../../components/Container";
 import Work from "../../components/Work";
 
 import * as S from "./styles";
+import { HomeProps } from "../../pages";
 
-export default function HomeTemplate() {
+export default function HomeTemplate({ data }: HomeProps) {
   return (
     <S.Wrapper>
       <header>
@@ -44,6 +45,17 @@ export default function HomeTemplate() {
 
       <Container>
         <section>
+          <Title name="Nossos Parceiros" image="line_botton.svg" />
+          <Parceiros />
+        </section>
+      </Container>
+
+      <section className="works" id="vagas">
+        <Work data={data} />
+      </section>
+
+      <Container>
+        <section>
           <Title
             name="Nossos Clientes"
             description="Estes são alguns de nossos clientes."
@@ -52,33 +64,6 @@ export default function HomeTemplate() {
           <Clients />
         </section>
       </Container>
-
-      <Container>
-        <section className="comment-user">
-          {Comments.map((item, index) => {
-            return (
-              <CardsComponent
-                key={index}
-                image={item.image}
-                title={item.title}
-                description={item.description}
-                align={item.align}
-              />
-            );
-          })}
-        </section>
-      </Container>
-
-      <Container>
-        <section>
-          <Title name="Nossos Parceiros" image="line_botton.svg" />
-          <Parceiros />
-        </section>
-      </Container>
-
-      <section className="works" id="vagas">
-        <Work />
-      </section>
 
       <footer>
         <Footer />

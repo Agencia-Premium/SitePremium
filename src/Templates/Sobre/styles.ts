@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
+
+
 export const Wrapper = styled.section`
   
   .CardsSobre {
+    width: 100%;
     display: flex;
-    width: 1064px;
+    /* width: 1064px; */
     margin: auto;
+    justify-content: center;
+    gap: 24px;
     
 
     @media screen and (max-width: 1076px) {

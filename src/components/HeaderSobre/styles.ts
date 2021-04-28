@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const appearFromLeft = keyframes `
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+`;
 
 export const Wrapper = styled.section`
   width: 100%;
@@ -26,6 +37,9 @@ export const ContainerTrofeu = styled.div`
   }
 
   img {
+
+    animation: ${appearFromLeft} 2s;
+
     @media screen and (max-width: 920px) {
       opacity: 0.3;
       max-width: 100%;

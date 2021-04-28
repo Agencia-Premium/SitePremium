@@ -1,15 +1,10 @@
 import styled, { css } from "styled-components";
 import media from "styled-media-query";
-import { CollaboratorSliderProps } from ".";
 
-type WrapperProps = Pick<CollaboratorSliderProps, "color">;
-
-export const Wrapper = styled.section<WrapperProps>`
+export const Wrapper = styled.section`
+  margin-top: 20px;
   min-width: 100%;
-  max-width: 1036px;
-  /* margin-top: 20px; */
-  margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
 
   ${({ color }) => css`
     ${media.lessThan("huge")`
@@ -21,12 +16,11 @@ export const Wrapper = styled.section<WrapperProps>`
     }
 
     .slick-slide {
-      min-width: 328px;
-      /* height: 345px; */
-      /* margin-left: 20px; */
+      min-width: 345px;
 
       @media screen and (max-width: 426px) {
-        margin-left: 30px;
+        /* margin-left: 30px; */
+        min-width: 200px;
       }
     }
 
@@ -34,21 +28,43 @@ export const Wrapper = styled.section<WrapperProps>`
       margin: 0 22px;
 
       height: 100%;
+
+      @media screen and (max-width: 526px) {
+        margin: 0 22px;
+      }
     }
     .slick-list {
       margin: 0 -22px;
+
+      @media screen and (max-width: 526px) {
+        margin: 0 -10px;
+      }
     }
 
     ${media.greaterThan("large")`
-    width: 100%;
+    /* width: 100%; */
     overflow-x: hidden;
     overflow-y: hidden;
 
       .slick-slide > div {
         margin: 0 24px;
+        overflow-x: hidden;
       }
       .slick-list {
         margin: 0 0px;
+        overflow-x: hidden;
+      }
+
+      .slick-slide {
+        min-width: 200px;
+      }
+
+      .slick-slide .slick-active {
+        min-width: 200px;
+      }
+
+      .slick-slider .slick-initialized {
+        overflow: hidden;
       }
     `}
     .slick-prev,
@@ -57,10 +73,11 @@ export const Wrapper = styled.section<WrapperProps>`
       color: #fff;
       cursor: pointer;
       position: absolute;
-      top: 60%;
+      top: 50%;
       width: 2.5rem;
       height: 2.5rem;
       padding: 0;
+      overflow-x: hidden;
       transform: translate(0, -50%);
     }
     .slick-prev {

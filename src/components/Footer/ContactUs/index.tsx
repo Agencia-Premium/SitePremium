@@ -1,5 +1,5 @@
 import React from "react";
-import { Send } from "@styled-icons/fluentui-system-regular/Send";
+import Link from "next/link";
 import * as S from "./styles";
 import Input from "../../Input";
 import Button from "../../Button";
@@ -18,15 +18,20 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="right">
-            <Button scale="xmedium" background="yellow">
-              Entrar em contato
-            </Button>
+            <Link href="contact">
+              <Button scale="xmedium" background="yellow">
+                Entrar em contato
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="container-footer">
           <div className="content">
             <div className="box-menu">
-              <img src="/logo.svg" alt="logo premium na cor dourada com os textos na cor branca" />
+              <img
+                src="/logo.svg"
+                alt="logo premium na cor dourada com os textos na cor branca"
+              />
               <div className="content-menu">
                 <h1>Menu</h1>
                 <p>Início</p>

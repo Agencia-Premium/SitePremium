@@ -10,7 +10,7 @@ export const ClientsSection = styled.section`
 
     @media screen and (max-width: 426px) {
       width: 100%;
-      margin-top: 20px;
+      /* margin-top: 20px; */
     }
 
     .logo-list {

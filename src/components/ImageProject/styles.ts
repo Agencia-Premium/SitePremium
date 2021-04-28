@@ -30,7 +30,7 @@ export const ContainerGallery = styled.div`
 
   h2 {
     position: absolute;
-    top: 272px;
+    top: 300px;
     left: 19px;
     font-size: 3.2rem;
     font-weight: 700;
@@ -39,7 +39,7 @@ export const ContainerGallery = styled.div`
 
   p {
     position: absolute;
-    top: 309px;
+    top: 340px;
     left: 20px;
     width: 210px;
     height: 63px;
@@ -51,8 +51,8 @@ export const ContainerGallery = styled.div`
   }
 
   .blur {
-    width: 328px;
-    height: 202px;
+    width: 100%;
+    height: 140px;
     position: absolute;
     bottom: -2px;
     border: none;
@@ -64,8 +64,8 @@ export const ContainerGallery = styled.div`
 
   button {
     position: absolute;
-    top: 325px;
-    left: 261px;
+    top: 335px;
+    right: 20px;
     cursor: pointer;
     background: transparent;
     border: 0;

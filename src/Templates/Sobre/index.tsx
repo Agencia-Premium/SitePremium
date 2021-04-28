@@ -26,16 +26,23 @@ export default function SobreTemplate() {
       <main className="CardsSobre">
         <CardsSobre
           image="valores.svg"
-          title="Nossos Valores:"
+          title="Nossos Valores"
           subtitle="Valorização dos nossos colaboradores; Ter Ética e Princípios acima de tudo; Promover a inovação e o uso de novas tecnologias como cerne do nosso negócio;"
           alt="Nossos Valores"
         />
         <CardsSobre
           image="missao.svg"
-          title="Nossos Missão:"
+          title="Nossa Missão"
           subtitle="Promover a resolução de problemas de nossos clientes e da sociedade por meio do Marketing, da Tecnologia e da Inovação com agilidade, ética e transparência."
           alt="Nossos Missão"
         />
+        <CardsSobre
+          image="binoculo.webp"
+          title="Nossa Visão"
+          subtitle="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, libero."
+          alt="Nossa Visão"
+        />
+         
       </main>
       <section className="history">
         <Coments

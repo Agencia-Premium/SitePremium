@@ -1,17 +1,20 @@
+import React, { useEffect, useState } from 'react'
+
 import Slider, { Settings } from "react-slick";
 import { ArrowBackIos as ArrowLeft } from "@styled-icons/material-outlined/ArrowBackIos";
 import { ArrowForwardIos as ArrowRight } from "@styled-icons/material-outlined/ArrowForwardIos";
 
 import Collaborator, { CollaboratorProps } from "../Collaborator";
 import { Collaborators } from "../Collaborator/constants";
+
+import CardWork from '../CardWork';
+import { Work } from '../CardWork/Constants'
 import * as S from "./styles";
 
-export type CollaboratorSliderProps = {
-  color?: "white" | "black";
-};
+import { HomeProps } from '../../pages/index'
 
 const settings: Settings = {
-  arrows: true,
+  arrows: false,
   slidesToShow: 3,
   infinite: false,
   lazyLoad: "ondemand",
@@ -31,17 +34,17 @@ const settings: Settings = {
       }
     },
     {
-      breakpoint: 570,
+      breakpoint: 768,
       settings: {
         arrows: false,
         slidesToShow: 1,
       },
     },
     {
-      breakpoint: 375,
+      breakpoint: 426,
       settings: {
         arrows: false,
-        slidesToShow: 1,
+        slidesToShow: 1.2,
       },
     },
   ],
@@ -49,23 +52,11 @@ const settings: Settings = {
   prevArrow: <ArrowLeft aria-label="previous card" />,
 };
 
-const CollaboratorSlider = ({ color = "white" }: CollaboratorSliderProps) => (
-  <S.Wrapper color={color}>
+const CollaboratorSlider = ({ data }: HomeProps) => (
+  <S.Wrapper>
     <Slider {...settings}>
-      {Collaborators.map((item, index) => {
-        return (
-          <Collaborator
-            key={index}
-            image={item.image}
-            name={item.name}
-            occupation={item.occupation}
-            description={item.description}
-            facebook={item.socialMedia.facebook}
-            instagram={item.socialMedia.instagram}
-            linkedin={item.socialMedia.linkedin}
-            twitter={item.socialMedia.twitter}
-          />
-        );
+      {data.map(( item, index ) => {
+        return <CardWork key={item.id} title={item.title} description={item.description} image={`http://localhost:1337${item.image.url}`} />
       })}
     </Slider>
   </S.Wrapper>

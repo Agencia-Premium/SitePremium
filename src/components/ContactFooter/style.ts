@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const appearFromBottom = keyframes `
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-0px)
+  }
+`
 
 export const ContainerContact = styled.div`
   width: 100%;
@@ -11,8 +22,11 @@ export const ContainerContact = styled.div`
   font-weight: 700;
   font-family: "Ubuntu";
   color: rgba(223, 223, 223, 1);
-  padding-top: 90px;
-  padding-bottom: 40px;
+  position: relative;
+
+
+  /* padding-top: 90px; */
+  /* padding-bottom: 40px; */
  
 
   @media screen and (max-width: 768px) {
@@ -23,6 +37,7 @@ export const ContainerContact = styled.div`
     position: absolute;
     bottom: 40px;
     display: flex;
+    animation: ${appearFromBottom} 2s;
 
   }
    .container-footer a {

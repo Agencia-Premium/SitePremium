@@ -1,49 +1,62 @@
 import styled from 'styled-components';
 
 export const ContainerSobre = styled.div`
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 
     @media screen and (max-width: 1076px) {
         margin-bottom: 20px;
     }
+
+    :hover {
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+    }
 `
 
 export const GradeLeft = styled.div`
-    width: 499px;
-    height: 157px;
+    width: 328px;
+    height: 330px;
     background-color: rgba(18,18,18,0.5);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
 
     @media screen and (max-width: 768px) {
-        width: 450px;
-        height: 157px;
+        width: 300px;
+        height: 302px;
     }
 
     @media screen and (max-width: 426px) {
-        width: 350px;
-        height: 157px;
+        width: 280px;
+        height: 282px;
     }
 
 `
 
 export const Left = styled.div`
-    width: 30%;
+    width: 100%;
+    height: 40%;
     display: flex;
     align-items: center;
     margin-right: 18px;
      justify-content: center; 
+
+     img {
+         width: 90px;
+         height: 90px;
+     }
 `
 export const Right = styled.div`
-    width: 80%;
-    text-align: justify;
-    margin-right: 28px;
+    width: 100%;
+    height: 60%;
+    text-align: center;
     
     h2 {
         font-size: 2.4rem;
@@ -63,7 +76,8 @@ export const Right = styled.div`
         font-family: "Ubuntu";
         line-height: 2rem;
         color: #acacac;
-        margin: 0 0 0 0;
+        padding: 20px 40px;
+        text-align: justify;
 
         @media screen and (max-width: 768px) {
             font-size: 1.2rem;
