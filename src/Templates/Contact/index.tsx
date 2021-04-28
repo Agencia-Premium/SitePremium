@@ -114,7 +114,7 @@ const ContactTemplate: React.FC = () => {
                   scale="medium"
                   onClick={ValidateForm}
                 >
-                  Enviar mensagem <img src="aviao.svg" />
+                  Enviar mensagem <img src="/aviao-contact.svg" />
                 </Button>
               </>
             )}
