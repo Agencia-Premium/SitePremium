@@ -7,6 +7,7 @@ import Coments from "../components/Coments";
 import { Card } from "../components/ImageProject/constants";
 import ImageProject from "../components/ImageProject";
 import api from "../services/api";
+import { Container } from "../components/Container";
 
 export interface I_ProjectType {
   id: string;
@@ -20,7 +21,7 @@ export interface I_ProjectType {
   gallery?: {
     name: string;
     url: string;
-  }[]
+  }[];
   href: string;
 }
 
@@ -45,7 +46,7 @@ export default function ourproject({ projects }) {
                 name: project.image.name,
                 url: project.image.url,
               },
-              href: project.id
+              href: project.id,
             };
 
             return object;
@@ -85,25 +86,27 @@ export default function ourproject({ projects }) {
         <Coments name="Nosso projetos" />
       </main>
 
-      <section className="gallery">
-        {isLoaded && (
-          <>
-            {data.map((item) => {
-              return (
-                <ImageProject
-                  key={item.id}
-                  id={item.id}
-                  image={item.image}
-                  title={item.title}
-                  short_description={item.short_description}
-                  description={item.description}
-                  href={item.id}
-                />
-              );
-            })}
-          </>
-        )}
-      </section>
+      <Container>
+        <section className="gallery">
+          {isLoaded && (
+            <>
+              {data.map((item) => {
+                return (
+                  <ImageProject
+                    key={item.id}
+                    id={item.id}
+                    image={item.image}
+                    title={item.title}
+                    short_description={item.short_description}
+                    description={item.description}
+                    href={item.id}
+                  />
+                );
+              })}
+            </>
+          )}
+        </section>
+      </Container>
 
       <footer>
         <Footer />

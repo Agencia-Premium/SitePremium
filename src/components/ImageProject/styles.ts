@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const ContainerGallery = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 3fr;
+  /* gap: 24px; */
   border-radius: 8px;
   color: #ffffff;
 
@@ -17,6 +17,11 @@ export const ContainerGallery = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* @media screen and (max-width: 526px) {
+      width: 300px;
+      height: 360px;
+    } */
   }
   .imagem {
     display: flex;

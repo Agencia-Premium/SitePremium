@@ -19,13 +19,16 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .gallery {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 1080px;
-        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
+
+        @media screen and (max-width: 1120px) {
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      margin: 0 auto;
+
+    }
     }
 
     section.Gallery-project {
