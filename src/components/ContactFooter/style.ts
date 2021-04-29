@@ -34,10 +34,12 @@ export const ContainerContact = styled.div`
   }
 
   .container-footer {
-    position: absolute;
-    bottom: 40px;
+    /* position: absolute; */
+    /* bottom: 40px; */
+    margin-bottom: 20px;
     display: flex;
     animation: ${appearFromBottom} 2s;
+    gap: 40px;
 
   }
    .container-footer a {
@@ -59,8 +61,13 @@ export const ContainerContact = styled.div`
     display: inline-block;
   }
 
-  div {
-    margin-right: 24px;
-    margin-left: 80px;
+  div.content {
+    img {
+      margin-right: 10px;
+      margin-bottom: -4px;
+    }
+
   }
+   .content a {
+    }
 `;

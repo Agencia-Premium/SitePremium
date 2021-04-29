@@ -19,13 +19,21 @@ const appearFromRight = keyframes`
   0% {
     opacity: 0;
     transform: translateX(50px);
+
+    @media screen and (max-width: 526px) {
+      transform: translateX(10px);
+    }
   }
   60% {
     opacity: 1;
     transform: translateX(-50px);
+    @media screen and (max-width: 526px) {
+      transform: translateX(-10px);
+    }
   }
   100% {
     transform: translateX(0px);
+   
   }
 `;
 
@@ -54,7 +62,7 @@ export const Left = styled.div`
     animation: ${appearFromLeft} 6s;
 
     @media screen and (max-width: 780px) {
-      width: 80%;
+      width: 60%;
     }
   }
 `;
@@ -92,6 +100,10 @@ export const Right = styled.div`
   img {
     @media screen and (max-width: 1020px) {
       width: 220px;
+    }
+
+    @media screen and (max-width: 526px) {
+      width: 160px;
     }
   }
 `;

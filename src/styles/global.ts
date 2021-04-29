@@ -24,11 +24,16 @@ const GlobalStyle = createGlobalStyle`
         gap: 24px;
 
         @media screen and (max-width: 1120px) {
-      grid-template-columns: repeat(1, 1fr);
-      width: 100%;
-      margin: 0 auto;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            margin: 0 auto;
+        }
 
-    }
+        @media screen and (max-width: 526px) {
+            grid-template-columns: repeat(1, 1fr);
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 
     section.Gallery-project {

@@ -12,16 +12,15 @@ export const ContainerGallery = styled.div`
     height: 386px;
     position: relative;
     box-sizing: border-box;
-    /* margin: 1.2rem; */
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
 
-    /* @media screen and (max-width: 526px) {
-      width: 300px;
-      height: 360px;
-    } */
+    @media screen and (max-width: 526px) {
+      width: 280px;
+      height: 300px;
+    }
   }
   .imagem {
     display: flex;
@@ -30,6 +29,11 @@ export const ContainerGallery = styled.div`
 
     img {
       border-radius: 8px;
+
+      @media screen and (max-width: 526px) {
+        width: 280px;
+        height: 300px;
+      }
     }
   }
 
@@ -40,6 +44,11 @@ export const ContainerGallery = styled.div`
     font-size: 3.2rem;
     font-weight: 700;
     font-family: "Ubuntu";
+
+    @media screen and (max-width: 526px) {
+      top: 240px;
+      font-size: 2.6rem;
+    }
   }
 
   p {
@@ -53,6 +62,11 @@ export const ContainerGallery = styled.div`
     font-family: "Ubuntu";
     text-align: justify;
     overflow: hidden;
+
+    @media screen and (max-width: 526px) {
+      top: 270px;
+      font-size: 1.2rem;
+    }
   }
 
   .blur {
@@ -65,6 +79,11 @@ export const ContainerGallery = styled.div`
     border-radius: 8px;
     backdrop-filter: blur(10px);
     clip-path: polygon(0% 100%, 100% 100%, 100% 39%, -12% 0%);
+
+    @media screen and (max-width: 526px) {
+      height: 100px;
+      width: 100%;
+    }
   }
 
   button {
@@ -74,7 +93,6 @@ export const ContainerGallery = styled.div`
     cursor: pointer;
     background: transparent;
     border: 0;
-
   }
 
   .arrow {

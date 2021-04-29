@@ -56,11 +56,11 @@ export const Wrapper = styled.section`
       }
 
       .slick-slide {
-        min-width: 200px;
+        min-width: 345px;
       }
 
       .slick-slide .slick-active {
-        min-width: 200px;
+        /* min-width: 200px; */
       }
 
       .slick-slider .slick-initialized {
