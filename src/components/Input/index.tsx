@@ -9,6 +9,7 @@ export type InputProps = {
   marginBottom?: boolean;
   placeholder?: string;
   borderColor?: boolean;
+  mask?: string;
 } & InputAttributesProps;
 
 const Input: React.FC<InputProps> = ({
@@ -16,6 +17,8 @@ const Input: React.FC<InputProps> = ({
   scale = "medium",
   marginBottom = true,
   placeholder,
+  borderColor = false,
+  mask,
   ...props
 }) => {
   return (
@@ -25,7 +28,8 @@ const Input: React.FC<InputProps> = ({
         background={background}
         scale={scale}
         marginBottom={marginBottom}
-        borderColor = {false}
+        borderColor = {borderColor}
+        mask={mask}
         {...props}
       ></S.Wrapper>
     </>

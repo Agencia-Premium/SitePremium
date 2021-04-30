@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 
 import api from "../../services/api";
@@ -37,7 +37,7 @@ const ContactTemplate: React.FC = () => {
       try {
         setTimeout(function () {
           setProgress(1);
-        }, 1000);
+        }, 500);
         setTimeout(function () {
           api
             .post("/forms", { name, email, phone, message })
@@ -97,9 +97,11 @@ const ContactTemplate: React.FC = () => {
                 <Input
                   background="transparent"
                   placeholder="Seu telefone."
+                  // type="number"
                   onChange={(e) => setPhone(e.target.value)}
                   value={phone}
                   borderColor={error && true}
+                  mask="(99)99999-9999"
                 />
                 <Input
                   background="transparent"
@@ -114,7 +116,7 @@ const ContactTemplate: React.FC = () => {
                   scale="medium"
                   onClick={ValidateForm}
                 >
-                  Enviar mensagem <img src="/aviao-contact.svg" />
+                  Enviar mensagem <img src="/aviao-contact.svg" alt="Botão de Enviar Mensagem" />
                 </Button>
               </>
             )}

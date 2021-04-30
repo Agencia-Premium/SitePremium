@@ -13,6 +13,7 @@ import ImageProject from "../../components/ImageProject";
 import api from "../../services/api";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { I_ProjectType } from "../ourproject";
+import { baseURL } from '../../../config.json'
 
 import { Container } from "../../components/Container";
 
@@ -49,7 +50,7 @@ export default function project({ mainProject, othersProjects }: Projects) {
               <div className="Left">
                 <img
                   className="imagem"
-                  src={`http://localhost:1337${mainProject.image.url}`}
+                  src={`{${baseURL}${mainProject.image.url}`}
                 />
               </div>
             </div>
@@ -65,7 +66,7 @@ export default function project({ mainProject, othersProjects }: Projects) {
                 <figure>
                   <img
                     key={index}
-                    src={`http://localhost:1337${item.url}`}
+                    src={`${baseURL}${item.url}`}
                     alt={item.name}
                   />
                 </figure>
