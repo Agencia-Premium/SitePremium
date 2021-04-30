@@ -31,7 +31,7 @@ const FooterContact: React.FC = ({}) => {
               </a>
             </div>
           </div>
-          <img className="circlo" src="circulo.svg" />
+          <img className="circlo" src="circulo.svg" alt="Círculo na cor preta" />
         </Container>
       </ContainerContact>
     </>

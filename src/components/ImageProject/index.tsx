@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
+import { baseURL } from "../../../config.json";
+
 import { I_ProjectType } from "../../pages/ourproject";
 
 import { ContainerGallery } from "./styles";
@@ -13,14 +15,14 @@ const ImageProject: React.FC<ComponentProps> = ({
   title,
   short_description,
   description,
-  href
+  href,
 }) => {
   return (
     <>
       <ContainerGallery>
         <div className="quadro">
           <div className="imagem">
-            <img src={`http://localhost:1337${image.url}`} alt={image.name} />
+            <img src={`${baseURL}${image.url}`} alt={image.name} />
           </div>
           <div className="blur" />
           <h2>{title}</h2>

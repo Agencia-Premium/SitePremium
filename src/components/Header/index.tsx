@@ -9,7 +9,7 @@ const Header: React.FC = ({}) => {
         <BgLinha>
           <Left>
             <h1>
-                <img src="/hastag.svg" />
+                <img src="/hastag.svg" alt="hastag" />
               Seja <br /> Premium
             </h1>
             <p>

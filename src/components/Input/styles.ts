@@ -1,12 +1,10 @@
 import styled, { css } from "styled-components";
 import { InputProps } from "./index";
+import InputMask from 'react-input-mask';
 
-type BorderProps = Pick<InputProps, 'borderColor'>
+type BorderProps = Pick<InputProps, "borderColor">;
 
 const WrapperModifiers = {
-
-  
-
   gray: () => css`
     background: #333;
     color: #ccc;
@@ -16,15 +14,15 @@ const WrapperModifiers = {
       color: #ccc;
     }
   `,
-  transparent: ({borderColor}: BorderProps) => css`
+  transparent: ({ borderColor }: BorderProps) => css`
     background-color: transparent;
     color: #848484;
     border-top-width: 1px;
-    
+
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
-    border-color: ${borderColor ? '#DC143C' : '#eee'};
+    border-color: ${borderColor ? "#DC143C" : "#eee"};
     ::placeholder {
       color: #848484;
     }
@@ -55,7 +53,7 @@ const WrapperModifiers = {
   `,
 };
 
-export const Wrapper = styled.input<InputProps>`
+export const Wrapper = styled(InputMask)<InputProps>`
   ${({ scale, background, marginBottom }) => css`
     padding-left: 12px;
     display: flex;
@@ -65,6 +63,12 @@ export const Wrapper = styled.input<InputProps>`
     ${!!background && WrapperModifiers[background]}
     ${!!scale && WrapperModifiers[scale]}
     margin-bottom: ${marginBottom ? "28px" : "0px"};
-    border-bottom-width: ${marginBottom ? '1px' : '0px'};
+    border-bottom-width: ${marginBottom ? "1px" : "0px"};
+    
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
   `}
 `;
