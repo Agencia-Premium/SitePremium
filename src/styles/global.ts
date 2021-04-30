@@ -5,6 +5,9 @@ const GlobalStyle = createGlobalStyle`
         font-size: 62.5%;
         background-color: linear-gradient(111.34deg, #545454 0%, #0B0B0B 100%);
     }
+    *{
+        box-sizing: border-box;
+    }
     .container {
         min-width: 100%;
         min-height: 100%;

@@ -14,6 +14,7 @@ import Work from "../../components/Work";
 
 import * as S from "./styles";
 import { HomeProps } from "../../pages";
+import BlogHome from "../../components/BlogHome";
 
 export default function HomeTemplate({ data }: HomeProps) {
   return (
@@ -40,6 +41,12 @@ export default function HomeTemplate({ data }: HomeProps) {
             description="Desempenhamos diversas atividades e funções que tem como objetivo trazer seu negócio para o online, ou fazer com que ele ganha mais força e atraia potênciais clientes."
           />
           <Cardes />
+        </section>
+      </Container>
+
+      <Container>
+        <section>
+          <BlogHome/>
         </section>
       </Container>
 
