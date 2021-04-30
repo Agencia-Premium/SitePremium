@@ -5,7 +5,10 @@ import {
 } from './styles';
 
 interface I_PostCard {
-  image: string;
+  image: {
+    name: string;
+    url: string;
+  }
   post_name: string;
   short_description: string;
   tag: string;
@@ -20,8 +23,8 @@ const PostCard: React.FC<I_PostCard> = ({
   created_at 
 }) => {
   return (
-    <PostCardStyles>
-      <img src={image} alt={post_name}/>
+    <PostCardStyles className="post-card" >
+      <img src={`https://cms.agenciapremium.com.br${image.url}`} alt={image.name}/>
       
       <div className="middle">
         <span>{created_at}</span>

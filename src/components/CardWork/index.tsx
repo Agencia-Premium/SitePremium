@@ -10,7 +10,7 @@ export type CardWorkProps = {
 const CardWork = ({ image, title, description }: CardWorkProps) => {
   return (
     <>
-      <S.Wrapper image={image}>
+      <S.Wrapper image={`https://cms.agenciapremium.com.br${image}`}>
         <h1>{title}</h1>
         <p>{description}</p>
       </S.Wrapper>

@@ -13,7 +13,7 @@ export const Wrapper = styled.div<WrapperProps>`
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 8px;
-  filter: drop-shadow(20px 23px 30px rgba(0, 0, 0, 0.42));
+  filter: drop-shadow(20px 23px 30px 0px rgba(0, 0, 0, 0.42));
 
   @media screen and (max-width: 526px) {
     min-width: 180px;

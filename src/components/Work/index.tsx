@@ -6,7 +6,7 @@ import { HomeProps } from '../../pages/index'
 
 import * as S from './styles'
 
-const Work = ({ data }: HomeProps) => {
+const Work: React.FC<Omit<HomeProps, 'posts'>> = ({ data }) => {
     return (
         <>
             <S.Wrapper>

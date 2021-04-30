@@ -1,13 +1,14 @@
 import React from 'react';
 import PostCard from '../components/PostCard';
+import { HomeProps } from '../../../pages'
 
 import {
   LayoutStyle,
 } from './styles';
 
-import { posts } from '../mock';
+// import { posts } from '../mock';
 
-const Layout: React.FC = () => {
+const Layout: React.FC<Omit<HomeProps, 'data'>> = ({ posts }) => {
   return(
     <>
       <LayoutStyle>
@@ -23,11 +24,14 @@ const Layout: React.FC = () => {
               index < 3 && (
                 <PostCard 
                   key={index}
-                  image={post.image} 
+                  image={{
+                    url: post.image.url,
+                    name: post.image.name,
+                  }}
                   post_name={post.post_name} 
                   short_description={post.short_description} 
                   tag={post.tag}
-                  created_at={post.created_at}
+                  created_at={post.published_at}
                 />
               )
             ))

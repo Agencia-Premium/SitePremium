@@ -8,6 +8,7 @@ export const PostCardStyles = styled.div`
 
   img {
     width: 100%;
+    border-radius: 8px;
   }
 
   .middle {

@@ -6,6 +6,15 @@ export const Wrapper = styled.section`
   min-width: 100%;
   overflow-x: hidden;
 
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 45%;
+    right: 32px;
+    z-index: 10;
+  }
+
   ${({ color }) => css`
     ${media.lessThan("huge")`
       overflow-x: hidden;

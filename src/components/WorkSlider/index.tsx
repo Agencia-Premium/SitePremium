@@ -52,11 +52,12 @@ const settings: Settings = {
   prevArrow: <ArrowLeft aria-label="previous card" />,
 };
 
-const CollaboratorSlider = ({ data }: HomeProps) => (
+const CollaboratorSlider: React.FC<Omit<HomeProps, 'posts'>> = ({ data }) => (
   <S.Wrapper>
+    <img src="fade-arrow-right.webp" alt="seta banca para a direita"/>
     <Slider {...settings}>
       {data.map(( item, index ) => {
-        return <CardWork key={item.id} title={item.title} description={item.description} image={`http://localhost:1337${item.image.url}`} />
+        return <CardWork key={item.id} title={item.title} description={item.description} image={item.image.url} />
       })}
     </Slider>
   </S.Wrapper>

@@ -16,7 +16,7 @@ import * as S from "./styles";
 import { HomeProps } from "../../pages";
 import BlogHome from "../../components/BlogHome";
 
-export default function HomeTemplate({ data }: HomeProps) {
+export default function HomeTemplate({ data, posts }: HomeProps) {
   return (
     <S.Wrapper>
       <header>
@@ -46,7 +46,7 @@ export default function HomeTemplate({ data }: HomeProps) {
 
       <Container>
         <section>
-          <BlogHome/>
+          <BlogHome posts={posts} />
         </section>
       </Container>
 
