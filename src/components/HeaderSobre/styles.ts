@@ -1,9 +1,20 @@
 import styled, { keyframes } from "styled-components";
 
-const appearFromLeft = keyframes `
+const appearFromLeft = keyframes`
   from {
     opacity: 0;
     transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+`;
+
+const appearFromRight = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
@@ -33,11 +44,10 @@ export const ContainerTrofeu = styled.div`
   justify-content: flex-end;
 
   @media screen and (max-width: 920px) {
-      justify-content: center;
+    justify-content: center;
   }
 
   img {
-
     animation: ${appearFromLeft} 2s;
 
     @media screen and (max-width: 920px) {
@@ -63,6 +73,7 @@ export const ContainerText = styled.div`
     font-family: "Ubuntu";
     font-weight: 500;
     text-align: right;
+    animation: ${appearFromRight} 2s;
 
     @media screen and (max-width: 920px) {
       font-size: 3.2rem;
@@ -82,6 +93,7 @@ export const ContainerText = styled.div`
     font-size: 9rem;
     text-align: right;
     font-family: "Ubuntu";
+    animation: ${appearFromRight} 2s;
 
     @media screen and (max-width: 920px) {
       font-size: 5rem;

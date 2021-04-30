@@ -1,4 +1,15 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const appearFromBottom = keyframes`
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+`;
 
 export const ContainerSobre = styled.div`
     /* width: 100%; */
@@ -27,6 +38,8 @@ export const GradeLeft = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+
+    animation: ${appearFromBottom} 2s;
 
     @media screen and (max-width: 768px) {
         width: 300px;

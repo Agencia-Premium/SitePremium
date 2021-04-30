@@ -88,7 +88,7 @@ export default function project({ mainProject, othersProjects }: Projects) {
                   title={item.title}
                   short_description={item.short_description}
                   description={item.description}
-                  href={item.id}
+                  href={`../${item.id}`}
                 />
               );
             })}
