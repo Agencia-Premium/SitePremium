@@ -210,23 +210,113 @@ export const Wrapper = styled.div`
 
 export const FooterMobile = styled.footer`
   display: none;
-  margin-top: 20px;
+  margin-top: 200px;
+  height: 300px;
 
   @media screen and (max-width: 1160px) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 60px;
+    position: relative;
+    height: 100% auto;
     align-items: center;
-    justify-content: center;
-
-    background-color: #222;
 
     p {
       font-size: 16px;
       font-weight: 500;
       color: #fff;
-      font-family: "Ubuntu"
+      font-family: "Ubuntu";
+      padding-bottom: 20px;
+    }
+
+    div.box-footer {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+      
+    }
+
+    div.content {
+      position: absolute;
+      bottom: 60px;
+      width: 60%;
+      background: linear-gradient(
+        105.57deg,
+        #e9e9e9 0%,
+        #cccccc 33.28%,
+        #a8a8a8 100%
+      );
+      padding-bottom: 40px;
+      z-index: 999;
+      clip-path: polygon(0 0, 100% 9%, 100% 92%, 0% 100%);
+      border-radius: 8px;
+
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        bottom: 80px;
+      }
+    }
+
+    .left-content {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
+    }
+
+    .left-content h3 {
+      padding-top: 60px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #333;
+      font-family: "Ubuntu";
+      padding-left: 40px;
+
+      @media screen and (max-width: 768px) {
+        padding-top: 30px;
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: 526px) {
+        font-size: 18px;
+        padding-left: 20px;
+      }
+    }
+
+    .left-content p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      color: #333;
+      font-family: "Ubuntu";
+      padding: 40px 40px 0 40px;
+      text-align: justify;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        padding-top: 20px;
+      }
+
+      @media screen and (max-width: 526px) {
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    .right-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 100px;
     }
   }
 

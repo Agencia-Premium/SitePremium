@@ -21,10 +21,12 @@ const NavBar: React.FC<NavbarProps> = () => {
       <NavBarStyle>
         <MenuMobile isOpen={isOpen} toggle={toggle} />
         <Left>
-          <img
-            src="/logo.svg"
-            alt="Logo na cor amarela, escrito prêmium agência digital."
-          />
+          <Link href="/">
+            <img
+              src="/logo.svg"
+              alt="Logo na cor amarela, escrito prêmium agência digital."
+            />
+          </Link>
         </Left>
         <MobileIcon onClick={toggle}>
           <FaBars />

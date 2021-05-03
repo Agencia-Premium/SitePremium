@@ -82,8 +82,8 @@ export const Left = styled.div`
     }
 
     @media screen and (max-width: 426px) {
-      font-size: 4rem;
-      line-height: 40px;
+      font-size: 6rem;
+      line-height: 64px;
       text-align: center;
       padding-top: 20px;
     }
@@ -98,8 +98,8 @@ export const Left = styled.div`
       }
 
       @media screen and (max-width: 426px) {
-        width: 30px;
-        height: 40px;
+        width: 40px;
+        height: 50px;
         margin-right: 5px;
       }
     }

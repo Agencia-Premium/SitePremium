@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="right">
-            <Link href="contact">
+            <Link href="/contact">
               <Button scale="xmedium" background="yellow">
                 Entrar em contato
               </Button>
@@ -77,6 +77,25 @@ const Footer: React.FC = () => {
         </div>
       </S.Wrapper>
       <S.FooterMobile>
+        <div className="box-footer">
+          <div className="content">
+            <div className="left-content">
+              <h3>Pronto para começar ?</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                vel nibh augue. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Integer vel nibh augue.
+              </p>
+            </div>
+            <div className="right-content">
+              <Link href="/contact">
+                <Button scale="xsmall" background="yellow">
+                  Entrar em contato
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
         <p> ® 2021 Agência Premium | All Rights Reserved | Privacity</p>
       </S.FooterMobile>
     </>

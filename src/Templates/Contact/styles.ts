@@ -10,6 +10,11 @@ const appearFromAviao = keyframes`
         bottom: 70%;
         left: 70%;
         display: none;
+
+        @media screen and (max-width: 426px) {
+          bottom: 20%;
+          left: 20%;
+        }
     }
 `;
 
@@ -108,6 +113,7 @@ export const WrapperIcon = styled.div`
   justify-content: center;
   align-items: center;
 
+
   span {
     font-size: 24px;
     font-weight: 700;
@@ -117,24 +123,44 @@ export const WrapperIcon = styled.div`
 
   .success {
     padding-top: 400px;
+    font-size: 2rem;
   }
 
   .aviao {
     position: absolute;
     animation: ${appearFromAviao} 3s infinite;
+
+    @media screen and (max-width: 526px) {
+      width: 95px;
+      height: 74x;
+    }
   }
 
   .congratulations {
     position: absolute;
     animation: ${appearFromCongratulations} 3s infinite;
+
+    @media screen and (max-width: 526px) {
+      width: 222px;
+      height: 170px;
+    }
   }
 
   .error {
     position: absolute;
     animation: ${appearError} 2s infinite;
+
+    @media screen and (max-width: 526px) {
+      width: 256px;
+      height: 115px;
+    }
   }
 
   .error-text {
     padding-top: 400px;
+
+    @media screen and (max-width: 526px) {
+      font-size: 2rem;
+    }
   }
 `;

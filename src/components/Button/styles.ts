@@ -27,6 +27,21 @@ const WrapperModifiers = {
       font-weight: 700;
       text-align: center;
       cursor: pointer;
+
+      @media screen and (max-width: 1160px) {
+        font-size: 2rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 200px;
+        font-size: 1.6rem;
+      }
+
+      @media screen and (max-width: 526px) {
+        width: 160px;
+        height: 40px;
+        font-size: 1.2rem;
+      }
   `,
 
   xmedium: () => css`

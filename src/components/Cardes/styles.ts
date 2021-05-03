@@ -1,11 +1,24 @@
 import styled from 'styled-components';
 
 export const ContainerCards = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     margin: 50px 0 10px 0;
+
+    @media screen and (max-width: 1120px) {
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      margin: 0 auto;
+
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      margin: 0 auto;
+
+    }
 `
 export const Cards = styled.div`
     width: 328px;

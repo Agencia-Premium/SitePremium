@@ -24,6 +24,7 @@ const ContactTemplate: React.FC = () => {
   // Progress 1 = Enviando
   // Progress 2 = Success
   // Progress 3 = Error
+  
 
   const ValidateForm = async () => {
     if (
@@ -137,7 +138,7 @@ const ContactTemplate: React.FC = () => {
                   className="congratulations"
                   alt="cone colorido com uma mensagem de sucesso"
                 />
-                <span className="success">Mensagem enviada com sucesso!</span>
+                <span className="success">Mensagem enviada com sucesso 😄</span>
               </S.WrapperIcon>
             )}
             {progress === 3 && (

@@ -27,6 +27,7 @@ export const Left = styled.div`
   justify-content: center;
 
   img {
+  cursor: pointer;
     @media screen and (max-width: 426px) {
       margin-left: 40px;
     }
