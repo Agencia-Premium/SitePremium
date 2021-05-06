@@ -1,8 +1,35 @@
 import React from "react";
 import { useRouter } from "next/router";
 import api from "../../services/api";
-import { formatISO } from "date-fns";
+import { formatISO, format } from "date-fns";
 import { GetStaticPaths } from "next";
+import axios from "axios";
+
+import { Container } from "../../components/Container";
+import Navbar from "../../components/NavBar";
+import PostsTemplate from "../../Templates/PostSelected";
+import { baseURL } from "../../../config.json";
+import BlogHome from "../../components/BlogHome";
+import Footer from "../../components/Footer/ContactUs";
+
+type PublicationType = {
+  publication: {
+    id: number;
+    post_name: string;
+    short_description: string;
+    tag: string;
+    published_at: string;
+    image: {
+      name: string;
+      url: string;
+    };
+    banner: {
+      url: string;
+    };
+    description: string;
+  };
+  posts: PostType[];
+};
 
 type PostType = {
   id: number;
@@ -16,19 +43,27 @@ type PostType = {
   };
 };
 
-const PostSelected = ({
-  id,
-  post_name,
-  short_description,
-  tag,
-  published_at,
-  image,
-}: PostType) => {
+const PostSelected = ({ publication, posts }: PublicationType) => {
   const router = useRouter();
-  const { pid } = router.query;
+
+  const time = format(new Date(publication.published_at), "MM / dd / yyyy");
+  console.log(time);
+
   return (
     <>
-      <h1>{pid}</h1>
+      <Navbar />
+      <Container>
+        <PostsTemplate
+          banner={`http://localhost:1337${publication.image.url}`}
+          day={time}
+          title={publication.post_name}
+          description={publication.description}
+        />
+        <section style={{ marginTop: "120px" }}>
+          <BlogHome posts={posts} />
+        </section>
+      </Container>
+      <Footer />
     </>
   );
 };
@@ -36,16 +71,20 @@ const PostSelected = ({
 export default PostSelected;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    return {
-      paths: [],
-      fallback: "blocking",
-    };
+  return {
+    paths: [],
+    fallback: "blocking",
   };
-  
+};
 
-export async function getStaticProps() {
-  const { data: postsData } = await api.get("/posts");
+export async function getStaticProps(ctx) {
+  const { pid } = ctx.params;
+  const { data: publicationData } = await axios.get(
+    `http://localhost:1337/posts/${pid}`
+  );
+  const { data: postsData } = await axios.get("http://localhost:1337/posts");
 
+  const publication = publicationData as PublicationType[];
   const posts = postsData as PostType[];
 
   const postsListFormatted = posts.map((post) => {
@@ -67,6 +106,7 @@ export async function getStaticProps() {
 
   return {
     props: {
+      publication,
       posts: postsListFormatted,
     },
     revalidate: 3600,

@@ -114,6 +114,7 @@ export const Gallery = styled.div`
 
     img {
       border-radius: 8px;
+      max-height: 330px;
       
       @media screen and (max-width: 1120px) {
         width: 100%;

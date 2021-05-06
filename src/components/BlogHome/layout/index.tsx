@@ -28,6 +28,7 @@ const Layout: React.FC<Omit<HomeProps, 'data'>> = ({ posts }) => {
                     url: post.image.url,
                     name: post.image.name,
                   }}
+                  id={post.id}
                   post_name={post.post_name} 
                   short_description={post.short_description} 
                   tag={post.tag}

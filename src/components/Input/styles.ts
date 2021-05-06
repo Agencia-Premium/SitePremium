@@ -22,7 +22,7 @@ const WrapperModifiers = {
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
-    border-color: ${borderColor ? "#DC143C" : "#eee"};
+    border-color: ${borderColor ? '#DC143C' : '#eee'};
     ::placeholder {
       color: #848484;
     }

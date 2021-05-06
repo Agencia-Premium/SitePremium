@@ -8,6 +8,7 @@ interface I_PostCard {
     name: string;
     url: string;
   };
+  id: number;
   post_name: string;
   short_description: string;
   tag: string;
@@ -16,6 +17,7 @@ interface I_PostCard {
 
 const PostCard: React.FC<I_PostCard> = ({
   image,
+  id,
   post_name,
   short_description,
   tag,
@@ -24,11 +26,12 @@ const PostCard: React.FC<I_PostCard> = ({
   return (
     <PostCardStyles className="post-card">
       <img
-        src={`https://cms.agenciapremium.com.br${image.url}`}
+        // src={`https://cms.agenciapremium.com.br${image.url}`}
+        src={`http://localhost:1337${image.url}`}
         alt={image.name}
       />
       <div className="container-overflow">
-        <Link href={`/posts/2`}>
+        <Link href={`/posts/${id}`}>
           <button className="button-overflow">Continue Lendo</button>
         </Link>
       </div>

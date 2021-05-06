@@ -3,6 +3,7 @@ import HomeTemplate from "../Templates/Home";
 import api from "../services/api";
 import Head from "next/head";
 import { formatISO, getDay, getMonth, getYear } from 'date-fns'
+import axios from 'axios'
 
 type PostType = {
   id: number;
@@ -41,7 +42,8 @@ export default function Home({ data, posts }: HomeProps) {
 
 export async function getStaticProps() {
   const { data } = await api.get("/works");
-  const { data: postsData } = await api.get("/posts");
+  // const { data: postsData } = await api.get("/posts");
+  const { data: postsData } = await axios.get("http://localhost:1337/posts");
 
   const posts = postsData as PostType[];
 

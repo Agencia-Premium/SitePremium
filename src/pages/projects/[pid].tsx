@@ -50,7 +50,7 @@ export default function project({ mainProject, othersProjects }: Projects) {
               <div className="Left">
                 <img
                   className="imagem"
-                  src={`{${baseURL}${mainProject.image.url}`}
+                  src={`${baseURL}${mainProject.image.url}`}
                 />
               </div>
             </div>
