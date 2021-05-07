@@ -4,6 +4,7 @@ export const ClientsSection = styled.section`
 
   .container-clients {
     width: 100%;
+    margin: 30px 0px;
     /* max-width: 1032px;
     margin: 0 auto; */
 
