@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 import { InputProps } from "./index";
-import InputMask from 'react-input-mask';
+import InputMask from "react-input-mask";
 
-type BorderProps = Pick<InputProps, "borderColor">;
+type BorderProps = Pick<InputProps, "borderColorInput">;
 
 const WrapperModifiers = {
   gray: () => css`
@@ -14,7 +14,7 @@ const WrapperModifiers = {
       color: #ccc;
     }
   `,
-  transparent: ({ borderColor }: BorderProps) => css`
+  transparent: ({ borderColorInput }: BorderProps) => css`
     background-color: transparent;
     color: #848484;
     border-top-width: 1px;
@@ -22,7 +22,7 @@ const WrapperModifiers = {
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
-    border-color: ${borderColor ? '#DC143C' : '#eee'};
+    border-color: ${borderColorInput ? "#DC143C" : "#eee"};
     ::placeholder {
       color: #848484;
     }
@@ -64,7 +64,7 @@ export const Wrapper = styled(InputMask)<InputProps>`
     ${!!scale && WrapperModifiers[scale]}
     margin-bottom: ${marginBottom ? "28px" : "0px"};
     border-bottom-width: ${marginBottom ? "1px" : "0px"};
-    
+
     ::-webkit-inner-spin-button,
     ::-webkit-outer-spin-button {
       -webkit-appearance: none;

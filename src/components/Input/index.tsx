@@ -6,18 +6,18 @@ type InputAttributesProps = InputHTMLAttributes<HTMLInputElement>;
 export type InputProps = {
   background?: "gray" | "transparent";
   scale?: "small" | "medium" | "large";
-  marginBottom?: boolean;
+  marginBottomInput?: boolean;
   placeholder?: string;
-  borderColor?: boolean;
+  borderColorInput?: boolean;
   mask?: string;
 } & InputAttributesProps;
 
 const Input: React.FC<InputProps> = ({
   background = "gray",
   scale = "medium",
-  marginBottom = true,
+  marginBottomInput = true,
   placeholder,
-  borderColor = false,
+  borderColorInput = false,
   mask,
   ...props
 }) => {
@@ -27,8 +27,8 @@ const Input: React.FC<InputProps> = ({
         placeholder={placeholder}
         background={background}
         scale={scale}
-        marginBottom={marginBottom}
-        borderColor = {borderColor}
+        marginBottom={marginBottomInput}
+        borderColor={borderColorInput}
         mask={mask}
         {...props}
       ></S.Wrapper>

@@ -28,21 +28,20 @@ const Footer: React.FC = () => {
         <div className="container-footer">
           <div className="content">
             <div className="box-menu">
-             <a href="/">
-              <img
-                src="/logo.svg"
-                alt="logo premium na cor dourada com os textos na cor branca"
-              />
-             </a>
+              <a href="/">
+                <img
+                  src="/logo.svg"
+                  alt="logo premium na cor dourada com os textos na cor branca"
+                />
+              </a>
               <div className="content-menu">
                 <h1>Menu</h1>
                 <Link href="/">
                   <p>Início</p>
                 </Link>
                 <Link href="/#clientes">
-                <p>Clientes</p>
+                  <p>Clientes</p>
                 </Link>
-                
               </div>
               <div className="second-menu">
                 <Link href="/contact">
@@ -61,7 +60,7 @@ const Footer: React.FC = () => {
                 <Input
                   background="gray"
                   scale="small"
-                  marginBottom={false}
+                  marginBottomInput={false}
                   placeholder="Insira seu e-mail"
                 />
                 <Button scale="small" background="gray">
