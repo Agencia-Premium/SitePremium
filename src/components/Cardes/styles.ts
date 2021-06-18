@@ -8,14 +8,17 @@ export const ContainerCards = styled.div`
 
     @media screen and (max-width: 1120px) {
       grid-template-columns: repeat(2, 1fr);
-      width: 100%;
+      /* width: 100%;
+      margin: 0 auto;  dados originais*/
+      width: 95%;
       margin: 0 auto;
+      padding-left: 15px;
 
     }
 
     @media screen and (max-width: 768px) {
       grid-template-columns: repeat(1, 1fr);
-      width: 100%;
+      width: 90%;
       margin: 0 auto;
 
     }
@@ -25,7 +28,7 @@ export const Cards = styled.div`
     height: 214px;
     border-radius: 6px;
     background: rgba(11,11,11,0.5);
-    margin: 12px;
+    margin: 8px;
     text-align: left;
 
     @media screen and (max-width: 426px) {

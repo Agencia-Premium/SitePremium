@@ -28,19 +28,32 @@ const Footer: React.FC = () => {
         <div className="container-footer">
           <div className="content">
             <div className="box-menu">
+             <a href="/">
               <img
                 src="/logo.svg"
                 alt="logo premium na cor dourada com os textos na cor branca"
               />
+             </a>
               <div className="content-menu">
                 <h1>Menu</h1>
-                <p>Início</p>
-                <p>Clients</p>
-                <p>Colaboradores</p>
+                <Link href="/">
+                  <p>Início</p>
+                </Link>
+                <Link href="/#clientes">
+                <p>Clientes</p>
+                </Link>
+                
               </div>
               <div className="second-menu">
-                <p>Contato</p>
-                <p>Quem somos</p>
+                <Link href="/contact">
+                  <p>Contato</p>
+                </Link>
+                <Link href="/ourproject">
+                  <p>Projetos</p>
+                </Link>
+                <Link href="/sobre">
+                  <p>Sobre nós</p>
+                </Link>
               </div>
               <div className="three-menu">
                 <h1>Fique por dentro das novidades!</h1>
@@ -62,13 +75,13 @@ const Footer: React.FC = () => {
             <div className="copyright">
               <p>® 2021 Agência Premium | All Rights Reserved | Privacity</p>
               <div className="social-media">
-                <a href="#">
+                <a href="https://www.linkedin.com/company/agencia-premium-marketing/">
                   <img src="/linkedin-footer.svg" alt="icone do linkedin" />
                 </a>
-                <a href="#">
+                <a href="https://www.facebook.com/agenciapremiumro/">
                   <img src="/facebook-footer.svg" alt="icone do facebook" />
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/agenciapremiumro/">
                   <img src="/instagram-footer.svg" alt="icone do instagram" />
                 </a>
               </div>

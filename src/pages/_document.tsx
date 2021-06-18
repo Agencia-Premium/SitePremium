@@ -41,6 +41,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="description" content="Site da Agência Premium" />
+          <link rel="icon" href="/favicon1.svg" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"

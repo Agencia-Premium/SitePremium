@@ -43,7 +43,7 @@ export default function Home({ data, posts }: HomeProps) {
 export async function getStaticProps() {
   const { data } = await api.get("/works");
   // const { data: postsData } = await api.get("/posts");
-  const { data: postsData } = await axios.get("http://localhost:1337/posts");
+  const { data: postsData } = await axios.get("https://cms.agenciapremium.com.br/posts");
 
   const posts = postsData as PostType[];
 

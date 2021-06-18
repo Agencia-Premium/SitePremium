@@ -22,9 +22,9 @@ export default function HomeTemplate({ data, posts }: HomeProps) {
       <header>
         <GlobalStyle />
         <title>Agência Premium</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" /> {/* não muda nada */}
       </header>
-
+      
       <header>
         <NavBar />
       </header>
@@ -44,11 +44,11 @@ export default function HomeTemplate({ data, posts }: HomeProps) {
         </section>
       </Container>
 
-      <Container>
+      {/* <Container> conteúdo oculto para revisão do Samuel
         <section>
           <BlogHome posts={posts} />
         </section>
-      </Container>
+      </Container> */}
 
       <Container>
         <section>
@@ -57,12 +57,12 @@ export default function HomeTemplate({ data, posts }: HomeProps) {
         </section>
       </Container>
 
-      <section className="works" id="vagas">
+      {/* <section className="works" id="vagas"> conteúdo oculto para discutir com Gustavo.
         <Work data={data} />
-      </section>
+      </section> */}
 
       <Container>
-        <section>
+        <section id="clientes">
           <Title
             name="Nossos Clientes"
             description="Estes são alguns de nossos clientes."

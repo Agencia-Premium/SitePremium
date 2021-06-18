@@ -24,7 +24,7 @@ const NavBar: React.FC<NavbarProps> = () => {
           <Link href="/">
             <img
               src="/logo.svg"
-              alt="Logo na cor amarela, escrito prêmium agência digital."
+              alt="Logo de um troféu na cor amarela, escrito prêmium agência digital."
             />
           </Link>
         </Left>
@@ -42,9 +42,9 @@ const NavBar: React.FC<NavbarProps> = () => {
             <Link href="/sobre">
               <li>Sobre nós</li>
             </Link>
-            <Link href="/#vagas">
+            {/* <Link href="/#vagas">
               <li>Vagas</li>
-            </Link>
+            </Link>  ocultado para aplicação futura. */}
             <Link href="/ourproject">
               <li>Projetos</li>
             </Link>

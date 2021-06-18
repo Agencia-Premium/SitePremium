@@ -20,7 +20,7 @@ export const NavBarStyle = styled.div`
 `;
 
 export const Left = styled.div`
-  width: 20%;
+  width: 33%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -35,10 +35,10 @@ export const Left = styled.div`
   }
 `;
 export const Right = styled.div`
-  width: 80%;
+  width: 54%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 
   ul {
     display: flex;

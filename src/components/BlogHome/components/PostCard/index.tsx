@@ -26,8 +26,8 @@ const PostCard: React.FC<I_PostCard> = ({
   return (
     <PostCardStyles className="post-card">
       <img
-        // src={`https://cms.agenciapremium.com.br${image.url}`}
-        src={`http://localhost:1337${image.url}`}
+        src={`https://cms.agenciapremium.com.br${image.url}`}
+        // src={`http://localhost:1337${image.url}`}
         alt={image.name}
       />
       <div className="container-overflow">

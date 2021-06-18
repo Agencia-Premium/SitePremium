@@ -54,7 +54,8 @@ const PostSelected = ({ publication, posts }: PublicationType) => {
       <Navbar />
       <Container>
         <PostsTemplate
-          banner={`http://localhost:1337${publication.image.url}`}
+          // banner={`http://localhost:1337${publication.image.url}`}
+          banner={`https://cms.agenciapremium.com.br${publication.image.url}`}
           day={time}
           title={publication.post_name}
           description={publication.description}
@@ -80,9 +81,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export async function getStaticProps(ctx) {
   const { pid } = ctx.params;
   const { data: publicationData } = await axios.get(
-    `http://localhost:1337/posts/${pid}`
+    // `http://localhost:1337/posts/${pid}`
+    `https://cms.agenciapremium.com.br/posts/${pid}`
   );
-  const { data: postsData } = await axios.get("http://localhost:1337/posts");
+  const { data: postsData } = await axios.get("https://cms.agenciapremium.com.br/posts");
 
   const publication = publicationData as PublicationType[];
   const posts = postsData as PostType[];

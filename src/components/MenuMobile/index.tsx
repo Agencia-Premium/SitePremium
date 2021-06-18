@@ -19,7 +19,7 @@ const MenuMobile: React.FC<MenuMobileProps> = ({  isOpen, toggle }) => {
             <S.LinkMenu href="/">Início</S.LinkMenu>
             <S.LinkMenu href="/#services">Serviços</S.LinkMenu>
             <S.LinkMenu href="/sobre">Sobre nós</S.LinkMenu>
-            <S.LinkMenu href="/#vagas">Vagas</S.LinkMenu>
+            {/* <S.LinkMenu href="/#vagas">Vagas</S.LinkMenu> ocultado para futura aplicação.*/} 
             <S.LinkMenu href="/ourproject">Projetos</S.LinkMenu>
             <S.LinkMenu href="/contact">Contato</S.LinkMenu>
           </S.Menu>
