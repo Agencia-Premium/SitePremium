@@ -24,7 +24,6 @@ const ContactTemplate: React.FC = () => {
   // Progress 1 = Enviando
   // Progress 2 = Success
   // Progress 3 = Error
-  
 
   const ValidateForm = async () => {
     if (
@@ -85,15 +84,15 @@ const ContactTemplate: React.FC = () => {
                   placeholder="Qual é seu nome?"
                   onChange={(e) => setName(e.target.value)}
                   value={name}
-                  borderColor={error && true}
+                  borderColorInput={error && true}
                 />
                 <Input
                   background="transparent"
                   placeholder="Seu e-mail"
-                  marginBottom={false}
+                  marginBottomInput={false}
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
-                  borderColor={error && true}
+                  borderColorInput={error && true}
                 />
                 <Input
                   background="transparent"
@@ -101,7 +100,7 @@ const ContactTemplate: React.FC = () => {
                   // type="number"
                   onChange={(e) => setPhone(e.target.value)}
                   value={phone}
-                  borderColor={error && true}
+                  borderColorInput={error && true}
                   mask="(99)99999-9999"
                 />
                 <Input
@@ -110,14 +109,18 @@ const ContactTemplate: React.FC = () => {
                   scale="large"
                   onChange={(e) => setMessage(e.target.value)}
                   value={message}
-                  borderColor={error && true}
+                  borderColorInput={error && true}
                 />
                 <Button
                   background="yellow"
                   scale="medium"
                   onClick={ValidateForm}
                 >
-                  Enviar mensagem <img src="/aviao-contact.svg" alt="Botão de Enviar Mensagem" />
+                  Enviar mensagem
+                  <img
+                    src="/aviao-contact.svg"
+                    alt="Botão de Enviar Mensagem"
+                  />
                 </Button>
               </>
             )}
