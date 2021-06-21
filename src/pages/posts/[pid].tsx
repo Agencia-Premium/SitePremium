@@ -17,6 +17,7 @@ type PublicationType = {
     id: number;
     post_name: string;
     short_description: string;
+    long_description: string;
     tag: string;
     published_at: string;
     image: {
@@ -35,6 +36,7 @@ type PostType = {
   id: number;
   post_name: string;
   short_description: string;
+  long_description: string;
   tag: string;
   published_at: string;
   image: {
@@ -58,7 +60,7 @@ const PostSelected = ({ publication, posts }: PublicationType) => {
           banner={`https://cms.agenciapremium.com.br${publication.image.url}`}
           day={time}
           title={publication.post_name}
-          description={publication.description}
+          description={publication.long_description}
         />
         <section style={{ marginTop: "120px" }}>
           <BlogHome posts={posts} />
@@ -90,6 +92,7 @@ export async function getStaticProps(ctx) {
   const posts = postsData as PostType[];
 
   const postsListFormatted = posts.map((post) => {
+ 
     const [year, month, day] = formatISO(new Date(post.published_at), {
       representation: "date",
     }).split("-");
@@ -97,6 +100,7 @@ export async function getStaticProps(ctx) {
       id: post.id,
       post_name: post.post_name,
       short_description: post.short_description,
+      long_description: post.long_description,
       tag: post.tag,
       published_at: `${day} / ${month} / ${year}`,
       image: {

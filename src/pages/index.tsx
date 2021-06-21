@@ -9,6 +9,7 @@ type PostType = {
   id: number;
   post_name: string;
   short_description: string;
+  long_description: string;
   tag: string;
   published_at: string;
   image: {
@@ -53,6 +54,7 @@ export async function getStaticProps() {
       id: post.id,
       post_name: post.post_name,
       short_description: post.short_description,
+      long_description: post.long_description,
       tag: post.tag,
       published_at: `${day} / ${month} / ${year}`,
       image: {

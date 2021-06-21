@@ -44,11 +44,11 @@ export default function HomeTemplate({ data, posts }: HomeProps) {
         </section>
       </Container>
 
-      {/* <Container> conteúdo oculto para revisão do Samuel
+      <Container> 
         <section>
           <BlogHome posts={posts} />
         </section>
-      </Container> */}
+      </Container>
 
       <Container>
         <section>
@@ -57,7 +57,7 @@ export default function HomeTemplate({ data, posts }: HomeProps) {
         </section>
       </Container>
 
-      {/* <section className="works" id="vagas"> conteúdo oculto para discutir com Gustavo.
+      {/* <section className="works" id="vagas"> 
         <Work data={data} />
       </section> */}
 

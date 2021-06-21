@@ -42,9 +42,9 @@ const NavBar: React.FC<NavbarProps> = () => {
             <Link href="/sobre">
               <li>Sobre nós</li>
             </Link>
-            {/* <Link href="/#vagas">
+            <Link href="/#vagas">
               <li>Vagas</li>
-            </Link>  ocultado para aplicação futura. */}
+            </Link>  
             <Link href="/ourproject">
               <li>Projetos</li>
             </Link>
