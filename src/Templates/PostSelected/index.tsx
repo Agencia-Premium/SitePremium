@@ -5,7 +5,7 @@ type PostProps = {
   banner: string;
   title: string;
   day: string;
-  description: string;
+  description?: string;
 };
 
 function PostSelected({ banner, day, title, description }: PostProps) {

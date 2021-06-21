@@ -65,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
         }
     }
     
-    html, body, div, span, applet, object, iframe,
+     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
@@ -84,15 +84,14 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         border: 0;
         font-size: 100%;
-        font: inherit;
+        /* font: inherit; */
         vertical-align: baseline;
-    } 
-    /* HTML5 display-role reset for older browsers */
+    }
     article, aside, details, figcaption, figure, 
     footer, header, hgroup, menu, nav, section {
         display: block;
     }
-    body {
+     body {
         line-height: 1;
     }
     ol, ul {
@@ -109,6 +108,15 @@ const GlobalStyle = createGlobalStyle`
     table {
         border-collapse: collapse;
         border-spacing: 0;
+    }
+
+    .markdown {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: justify;
+        color: #ABABAB;
+        font-family: "Ubuntu";
     }
     `;
 

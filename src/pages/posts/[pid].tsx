@@ -11,6 +11,7 @@ import PostsTemplate from "../../Templates/PostSelected";
 import { baseURL } from "../../../config.json";
 import BlogHome from "../../components/BlogHome";
 import Footer from "../../components/Footer/ContactUs";
+import ReactMarkdown from "react-markdown";
 
 type PublicationType = {
   publication: {
@@ -49,7 +50,6 @@ const PostSelected = ({ publication, posts }: PublicationType) => {
   const router = useRouter();
 
   const time = format(new Date(publication.published_at), "MM / dd / yyyy");
-  console.log(time);
 
   return (
     <>
@@ -60,7 +60,11 @@ const PostSelected = ({ publication, posts }: PublicationType) => {
           banner={`https://cms.agenciapremium.com.br${publication.image.url}`}
           day={time}
           title={publication.post_name}
-          description={publication.long_description}
+        />
+
+        <ReactMarkdown
+          className="markdown"
+          children={publication.long_description}
         />
         <section style={{ marginTop: "120px" }}>
           <BlogHome posts={posts} />
@@ -86,13 +90,14 @@ export async function getStaticProps(ctx) {
     // `http://localhost:1337/posts/${pid}`
     `https://cms.agenciapremium.com.br/posts/${pid}`
   );
-  const { data: postsData } = await axios.get("https://cms.agenciapremium.com.br/posts");
+  const { data: postsData } = await axios.get(
+    "https://cms.agenciapremium.com.br/posts"
+  );
 
   const publication = publicationData as PublicationType[];
   const posts = postsData as PostType[];
 
   const postsListFormatted = posts.map((post) => {
- 
     const [year, month, day] = formatISO(new Date(post.published_at), {
       representation: "date",
     }).split("-");
